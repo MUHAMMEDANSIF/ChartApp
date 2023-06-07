@@ -15,6 +15,10 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-HomeComponent
+import { HomeComponent } from '../components/Home/Home.component';
+//CORE_REFERENCE_IMPORT-Hoizontal_Bar_ChartComponent
+import { Hoizontal_Bar_ChartComponent } from '../components/NgxChart/Hoizontal_Bar_Chart.component';
 
 /**
  * Reads datasource object and injects the datasource object into window object
@@ -30,7 +34,7 @@ export function startupServiceFactory(startupService: NDataSourceService) {
         });
       });
     });
-  }
+  };
 }
 
 /**
@@ -47,6 +51,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-HomeComponent
+  HomeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-Hoizontal_Bar_ChartComponent
+  Hoizontal_Bar_ChartComponent,
 ];
 
 /**
@@ -72,7 +80,14 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  {
+    path: 'Home',
+    component: HomeComponent,
+    children: [
+      { path: 'HoizontalBarChart', component: Hoizontal_Bar_ChartComponent },
+    ],
+  },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

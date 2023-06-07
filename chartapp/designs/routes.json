@@ -1,9 +1,20 @@
 {
     "routes": [
         {
+            "path": "Home",
+            "component": "HomeComponent",
+            "children": [
+                {
+                    "path": "HoizontalBarChart",
+                    "component": "Hoizontal_Bar_ChartComponent"
+                }
+            ]
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "/Home",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",
