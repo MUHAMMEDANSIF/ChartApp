@@ -1,0 +1,13 @@
+{
+    "displayName": "chartapp",
+    "appName": "chartapp",
+    "description": "simple chart app",
+    "lastModified": "2023-06-07T09:38:12.953Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2023-06-07T09:38:12.048Z",
+    "analyticsId": "d0a765e0-987d-189d-87bb-c5a458e95bf5",
+    "createdStudioVersion": "9.1.4"
+}

@@ -1,0 +1,13 @@
+{
+    "displayName": "chartapi",
+    "appName": "chartapi",
+    "description": "backend for chart",
+    "lastModified": "2023-06-07T09:42:01.425Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2023-06-07T09:41:57.410Z",
+    "analyticsId": "b49d2e68-de92-bec7-1c3a-8d51593bbac6",
+    "createdStudioVersion": "9.1.4"
+}
