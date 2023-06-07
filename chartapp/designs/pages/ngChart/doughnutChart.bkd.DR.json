@@ -1,18 +1,18 @@
 {
-    "efba96a2-bbbd-39ac-a84c-a48e210b919c": {
-        "paletteKey": "NG-ng-pie-chart",
+    "48df83f3-5153-3b22-6b86-d16ac4814b19": {
+        "paletteKey": "NG-ng-doughnut-chart",
         "commentid": null,
         "designerReference": [
             {
                 "_key": "componentLabel",
-                "_value": "Pie Chart",
+                "_value": "Doughnut Chart",
                 "_type": "kv",
                 "_attrDef": "p",
                 "_useAsLabel": true
             },
             {
                 "_key": "style",
-                "_value": "background:889EAF;",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -30,19 +30,19 @@
             },
             {
                 "_key": "[datasets]",
-                "_value": " page.pieChartData ",
+                "_value": "page.doughnutChartData ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[labels]",
-                "_value": "page.pieChartLabels  ",
+                "_value": "page.doughnutChartLabels ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[options]",
-                "_value": "page.pieChartOptions ",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },

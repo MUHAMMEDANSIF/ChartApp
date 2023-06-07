@@ -1,18 +1,18 @@
 {
-    "efba96a2-bbbd-39ac-a84c-a48e210b919c": {
-        "paletteKey": "NG-ng-pie-chart",
+    "f4f6b53b-8ba6-2bee-418a-e1eb7565e850": {
+        "paletteKey": "NG-ng-radar-chart",
         "commentid": null,
         "designerReference": [
             {
                 "_key": "componentLabel",
-                "_value": "Pie Chart",
+                "_value": "Radar Chart",
                 "_type": "kv",
                 "_attrDef": "p",
                 "_useAsLabel": true
             },
             {
                 "_key": "style",
-                "_value": "background:889EAF;",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -30,19 +30,19 @@
             },
             {
                 "_key": "[datasets]",
-                "_value": " page.pieChartData ",
+                "_value": "page.radarChartData",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[labels]",
-                "_value": "page.pieChartLabels  ",
+                "_value": "page.radarChartLabels",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[options]",
-                "_value": "page.pieChartOptions ",
+                "_value": "page.radarChartOptions",
                 "_type": "kv",
                 "_attrDef": "p"
             },

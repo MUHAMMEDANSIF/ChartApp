@@ -1,0 +1,100 @@
+[
+    {
+        "id": "sd_8QS6HWobRoCJNaqF",
+        "type": "tab",
+        "createdDate": "2023-06-07T10:52:50.972Z",
+        "label": "polarChart",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "polarChartComponent"
+    },
+    {
+        "id": "sd_AF0207Zi7YUEZp8B",
+        "type": "OnInit",
+        "z": "sd_8QS6HWobRoCJNaqF",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_AF0207Zi7YUEZp8B",
+        "category": "Lifecycle Events",
+        "x": 65,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Bitduw3SEH9VDMLU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "polarChartComponent"
+    },
+    {
+        "id": "sd_YIwj35oUup1QMvsk",
+        "type": "PageVariables",
+        "z": "sd_8QS6HWobRoCJNaqF",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "polarareaChartLabels",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "polarareaChartLabels"
+                }
+            },
+            {
+                "textIp": "polarareaChartOptions",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "polarareaChartOptions"
+                }
+            },
+            {
+                "textIp": "polarareaChartData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "polarareaChartData"
+                }
+            }
+        ],
+        "functionName": "sd_YIwj35oUup1QMvsk",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "polarChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Bitduw3SEH9VDMLU",
+        "type": "Script",
+        "z": "sd_8QS6HWobRoCJNaqF",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.polarareaChartData = [{\n  data:[300, 500, 100]}\n               ];\n\npage.polarareaChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\npage.polarareaChartOptions = {\n  responsive: true\n}",
+        "functionName": "sd_Bitduw3SEH9VDMLU",
+        "category": "Function",
+        "x": 165,
+        "y": 40,
+        "wires": [
+            [
+                "sd_YIwj35oUup1QMvsk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "polarChartComponent",
+        "generated": true
+    }
+]

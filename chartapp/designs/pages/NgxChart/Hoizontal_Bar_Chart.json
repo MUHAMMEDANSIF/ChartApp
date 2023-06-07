@@ -1,0 +1,78 @@
+[
+    {
+        "id": "sd_3Gu1p22HVUJCMCoV",
+        "type": "tab",
+        "createdDate": "2023-06-07T10:29:39.936Z",
+        "label": "Hoizontal_Bar_Chart",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "Hoizontal_Bar_ChartComponent"
+    },
+    {
+        "id": "sd_yk0bKsWMmInAv4HS",
+        "type": "OnInit",
+        "z": "sd_3Gu1p22HVUJCMCoV",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_yk0bKsWMmInAv4HS",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_tq0PKzgdfsSHpqVu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Hoizontal_Bar_ChartComponent"
+    },
+    {
+        "id": "sd_tq0PKzgdfsSHpqVu",
+        "type": "PageVariables",
+        "z": "sd_3Gu1p22HVUJCMCoV",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_tq0PKzgdfsSHpqVu",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_ObHJFvO9DEMWdyf4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ObHJFvO9DEMWdyf4",
+        "type": "Script",
+        "z": "sd_3Gu1p22HVUJCMCoV",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.dataSet=[\n{\n\"name\": \"India\",\n\"value\": 135148\n},\n{\n\"name\": \"United States\",\n\"value\": 121652\n},\n{\n\"name\": \"Germany\",\n\"value\": 157885\n},\n{\n\"name\": \"France\",\n\"value\": 965782\n},\n{\n\"name\": \"United Kingdom\",\n\"value\": 987564\n}\n]",
+        "functionName": "sd_ObHJFvO9DEMWdyf4",
+        "category": "Function",
+        "x": 320,
+        "y": 31,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "generated": true
+    }
+]

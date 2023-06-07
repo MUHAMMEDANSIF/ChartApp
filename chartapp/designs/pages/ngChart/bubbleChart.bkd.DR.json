@@ -1,18 +1,18 @@
 {
-    "efba96a2-bbbd-39ac-a84c-a48e210b919c": {
-        "paletteKey": "NG-ng-pie-chart",
+    "dc22e08e-efef-5f85-8dab-b17b55200e15": {
+        "paletteKey": "NG-ng-bubble-chart",
         "commentid": null,
         "designerReference": [
             {
                 "_key": "componentLabel",
-                "_value": "Pie Chart",
+                "_value": "Bubble Chart",
                 "_type": "kv",
                 "_attrDef": "p",
                 "_useAsLabel": true
             },
             {
                 "_key": "style",
-                "_value": "background:889EAF;",
+                "_value": " background:pink; ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -23,50 +23,14 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "[data]",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
                 "_key": "[datasets]",
-                "_value": " page.pieChartData ",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "[labels]",
-                "_value": "page.pieChartLabels  ",
+                "_value": " page.bubbleChartData",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[options]",
-                "_value": "page.pieChartOptions ",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "[colors]",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "[legend]",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "(chartHover)",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "(chartClick)",
-                "_value": "",
+                "_value": "page.bubbleChartOptions ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -79,6 +43,18 @@
             {
                 "_key": "fxFlex",
                 "_value": "50",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[labels]",
+                "_value": "page.bubbleChartLabels ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[colors]",
+                "_value": "page.bubbleChartColors",
                 "_type": "kv",
                 "_attrDef": "p"
             }

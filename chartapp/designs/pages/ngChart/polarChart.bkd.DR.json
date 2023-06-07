@@ -1,18 +1,18 @@
 {
-    "efba96a2-bbbd-39ac-a84c-a48e210b919c": {
-        "paletteKey": "NG-ng-pie-chart",
+    "b00c48c4-c0a8-d05e-84be-9d16d4b478a1": {
+        "paletteKey": "NG-ng-polcar-area-chart",
         "commentid": null,
         "designerReference": [
             {
                 "_key": "componentLabel",
-                "_value": "Pie Chart",
+                "_value": "Polar Area Chart",
                 "_type": "kv",
                 "_attrDef": "p",
                 "_useAsLabel": true
             },
             {
                 "_key": "style",
-                "_value": "background:889EAF;",
+                "_value": " background:889EAF; ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -30,19 +30,19 @@
             },
             {
                 "_key": "[datasets]",
-                "_value": " page.pieChartData ",
+                "_value": " page.polarareaChartData  ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[labels]",
-                "_value": "page.pieChartLabels  ",
+                "_value": "page.polarareaChartLabels  ",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "[options]",
-                "_value": "page.pieChartOptions ",
+                "_value": "page.polarareaChartOptions ",
                 "_type": "kv",
                 "_attrDef": "p"
             },

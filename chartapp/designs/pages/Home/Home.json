@@ -1,0 +1,78 @@
+[
+    {
+        "id": "sd_5RNLx9mDSXMCYocE",
+        "type": "tab",
+        "createdDate": "2023-06-07T10:32:50.509Z",
+        "label": "Home",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_6LaDk8CFfM0wFpOL",
+        "type": "OnInit",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_6LaDk8CFfM0wFpOL",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_7NOw7MzT2p4e8v78"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_7NOw7MzT2p4e8v78",
+        "type": "PageVariables",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_7NOw7MzT2p4e8v78",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_cD8aFynettfc9CeB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_cD8aFynettfc9CeB",
+        "type": "Script",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.data = [\n   {value: 'delhi-0', viewValue: 'Delhi'},\n   {value: 'mumbai-1', viewValue: 'Mumbai'},\n   {value: 'pune-2', viewValue: 'Pune'}\n ]\n",
+        "functionName": "sd_cD8aFynettfc9CeB",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    }
+]

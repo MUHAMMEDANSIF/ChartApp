@@ -1,8 +1,46 @@
 {
     "routes": [
         {
+            "path": "Home",
+            "component": "HomeComponent",
+            "children": [
+                {
+                    "path": "HoizontalBarChart",
+                    "component": "Hoizontal_Bar_ChartComponent"
+                },
+                {
+                    "path": "line",
+                    "component": "lineChartComponent"
+                },
+                {
+                    "path": "bar",
+                    "component": "barChartComponent"
+                },
+                {
+                    "path": "pie",
+                    "component": "pieChartComponent"
+                },
+                {
+                    "path": "doughnut",
+                    "component": "doughnutChartComponent"
+                },
+                {
+                    "path": "polar",
+                    "component": "polarChartComponent"
+                },
+                {
+                    "path": "radar",
+                    "component": "radarChartComponent"
+                },
+                {
+                    "path": "bubble",
+                    "component": "bubbleChartComponent"
+                }
+            ]
+        },
+        {
             "path": "''",
-            "redirectTo": "Home",
+            "redirectTo": "/Home",
             "pathMatch": "full",
             "default": true
         },

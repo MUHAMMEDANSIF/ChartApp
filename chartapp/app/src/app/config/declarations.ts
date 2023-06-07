@@ -15,12 +15,24 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-bubbleChartComponent
+import { bubbleChartComponent } from '../components/ngChart/bubbleChart.component';
+//CORE_REFERENCE_IMPORT-radarChartComponent
+import { radarChartComponent } from '../components/ngChart/radarChart.component';
+//CORE_REFERENCE_IMPORT-polarChartComponent
+import { polarChartComponent } from '../components/ngChart/polarChart.component';
+//CORE_REFERENCE_IMPORT-doughnutChartComponent
+import { doughnutChartComponent } from '../components/ngChart/doughnutChart.component';
 //CORE_REFERENCE_IMPORT-pieChartComponent
 import { pieChartComponent } from '../components/ngChart/pieChart.component';
 //CORE_REFERENCE_IMPORT-barChartComponent
 import { barChartComponent } from '../components/ngChart/barChart.component';
 //CORE_REFERENCE_IMPORT-lineChartComponent
 import { lineChartComponent } from '../components/ngChart/lineChart.component';
+//CORE_REFERENCE_IMPORT-HomeComponent
+import { HomeComponent } from '../components/Home/Home.component';
+//CORE_REFERENCE_IMPORT-Hoizontal_Bar_ChartComponent
+import { Hoizontal_Bar_ChartComponent } from '../components/NgxChart/Hoizontal_Bar_Chart.component';
 
 /**
  * Reads datasource object and injects the datasource object into window object
@@ -53,12 +65,24 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-bubbleChartComponent
+  bubbleChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-radarChartComponent
+  radarChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-polarChartComponent
+  polarChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-doughnutChartComponent
+  doughnutChartComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pieChartComponent
   pieChartComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-barChartComponent
   barChartComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-lineChartComponent
   lineChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-HomeComponent
+  HomeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-Hoizontal_Bar_ChartComponent
+  Hoizontal_Bar_ChartComponent,
 ];
 
 /**
@@ -84,7 +108,21 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  {
+    path: 'Home',
+    component: HomeComponent,
+    children: [
+      { path: 'HoizontalBarChart', component: Hoizontal_Bar_ChartComponent },
+      { path: 'line', component: lineChartComponent },
+      { path: 'bar', component: barChartComponent },
+      { path: 'pie', component: pieChartComponent },
+      { path: 'doughnut', component: doughnutChartComponent },
+      { path: 'polar', component: polarChartComponent },
+      { path: 'radar', component: radarChartComponent },
+      { path: 'bubble', component: bubbleChartComponent },
+    ],
+  },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
