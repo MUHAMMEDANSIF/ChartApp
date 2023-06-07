@@ -1,0 +1,100 @@
+[
+    {
+        "id": "sd_Ug858rRb1GSSnr2G",
+        "type": "tab",
+        "createdDate": "2023-06-07T11:07:45.320Z",
+        "label": "bubbleChart",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "bubbleChartComponent"
+    },
+    {
+        "id": "sd_xHC6VHcwo3Cf3Av1",
+        "type": "OnInit",
+        "z": "sd_Ug858rRb1GSSnr2G",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_xHC6VHcwo3Cf3Av1",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Le8ucVzwQyqEocUk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "bubbleChartComponent"
+    },
+    {
+        "id": "sd_mkShER5EA4zhwGnE",
+        "type": "PageVariables",
+        "z": "sd_Ug858rRb1GSSnr2G",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "bubbleChartLabels",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "bubbleChartLabels"
+                }
+            },
+            {
+                "textIp": "bubbleChartColors",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "bubbleChartColors"
+                }
+            },
+            {
+                "textIp": "bubbleChartData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "bubbleChartData"
+                }
+            }
+        ],
+        "functionName": "sd_mkShER5EA4zhwGnE",
+        "category": "Function",
+        "x": 345,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "bubbleChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Le8ucVzwQyqEocUk",
+        "type": "Script",
+        "z": "sd_Ug858rRb1GSSnr2G",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.bubbleChartData =\n    [ {\nlabel: ['Deer Population'],\ndata: [{x: 100,y: 5,r: 10},{x: 70,y: 30,r: 20},{x: 53,y: 5,r: 10},{x: 80,y: 52,r: 20}],\n }];\npage.bubbleChartLabels = ['Deer Population']\n\npage.bubbleChartColors = [\n      {\n            backgroundColor: '#ff0000',\n            borderColor: 'rgba(148,159,177,1)',\n            pointBackgroundColor: 'rgba(148,159,177,1)',\n            pointBorderColor: '#fff',\n            pointHoverBackgroundColor: '#fff',\n            pointHoverBorderColor: 'rgba(148,159,177,0.8)'\n        }\n        \n    ];",
+        "functionName": "sd_Le8ucVzwQyqEocUk",
+        "category": "Function",
+        "x": 185,
+        "y": 40,
+        "wires": [
+            [
+                "sd_mkShER5EA4zhwGnE"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "bubbleChartComponent",
+        "generated": true
+    }
+]

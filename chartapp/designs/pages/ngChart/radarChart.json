@@ -1,39 +1,39 @@
 [
     {
-        "id": "sd_5RNLx9mDSXMCYocE",
+        "id": "sd_I2p7KJ2FI2vivaVI",
         "type": "tab",
-        "createdDate": "2023-06-07T10:32:50.509Z",
-        "label": "Home",
+        "createdDate": "2023-06-07T11:04:59.582Z",
+        "label": "radarChart",
         "disabled": false,
         "info": "",
         "functionSeq": 0,
         "generateNext": true,
-        "serviceName": "HomeComponent"
+        "serviceName": "radarChartComponent"
     },
     {
-        "id": "sd_6LaDk8CFfM0wFpOL",
+        "id": "sd_BfOkdbvKeKtEoLuw",
         "type": "OnInit",
-        "z": "sd_5RNLx9mDSXMCYocE",
+        "z": "sd_I2p7KJ2FI2vivaVI",
         "viewType": "common",
         "nodeType": "start",
         "name": "",
-        "functionName": "sd_6LaDk8CFfM0wFpOL",
+        "functionName": "sd_BfOkdbvKeKtEoLuw",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 85,
+        "y": 40,
         "wires": [
             [
-                "sd_7NOw7MzT2p4e8v78"
+                "sd_7nsBZoqB2J4WfGE1"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "HomeComponent"
+        "serviceName": "radarChartComponent"
     },
     {
-        "id": "sd_7NOw7MzT2p4e8v78",
+        "id": "sd_KE3WZHpB8SONS1sB",
         "type": "PageVariables",
-        "z": "sd_5RNLx9mDSXMCYocE",
+        "z": "sd_I2p7KJ2FI2vivaVI",
         "viewType": "pages",
         "nodeType": "flow",
         "name": "",
@@ -41,29 +41,7 @@
         "outputs": 1,
         "operation": "set",
         "globalVariables": [],
-        "functionName": "sd_7NOw7MzT2p4e8v78",
-        "category": "Function",
-        "x": 180,
-        "y": 30,
-        "wires": [
-            [
-                "sd_cD8aFynettfc9CeB"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "HomeComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_cD8aFynettfc9CeB",
-        "type": "Script",
-        "z": "sd_5RNLx9mDSXMCYocE",
-        "viewType": "common",
-        "nodeType": "flow",
-        "name": "",
-        "script": "page.data = [\n   {value: 'delhi-0', viewValue: 'Delhi'},\n   {value: 'mumbai-1', viewValue: 'Mumbai'},\n   {value: 'pune-2', viewValue: 'Pune'}\n ]\n",
-        "functionName": "sd_cD8aFynettfc9CeB",
+        "functionName": "sd_KE3WZHpB8SONS1sB",
         "category": "Function",
         "x": 325,
         "y": 40,
@@ -72,7 +50,29 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "HomeComponent",
+        "serviceName": "radarChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_7nsBZoqB2J4WfGE1",
+        "type": "Script",
+        "z": "sd_I2p7KJ2FI2vivaVI",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.radarChartData = [{\n  data:[300, 500, 100]}\n               ];\n\npage.radarChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\npage.radarChartOptions = {\n  responsive: true\n}",
+        "functionName": "sd_7nsBZoqB2J4WfGE1",
+        "category": "Function",
+        "x": 185,
+        "y": 40,
+        "wires": [
+            [
+                "sd_KE3WZHpB8SONS1sB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "radarChartComponent",
         "generated": true
     }
 ]

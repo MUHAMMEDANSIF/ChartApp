@@ -1,0 +1,87 @@
+{
+    "b00c48c4-c0a8-d05e-84be-9d16d4b478a1": {
+        "paletteKey": "NG-ng-polcar-area-chart",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Polar Area Chart",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": " background:889EAF; ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[data]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[datasets]",
+                "_value": " page.polarareaChartData  ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[labels]",
+                "_value": "page.polarareaChartLabels  ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[options]",
+                "_value": "page.polarareaChartOptions ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[colors]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[legend]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartHover)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartClick)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayout",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "50",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ]
+    }
+}

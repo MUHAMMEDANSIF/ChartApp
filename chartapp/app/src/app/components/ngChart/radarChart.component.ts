@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Home',
-  templateUrl: './Home.template.html',
+  selector: 'bh-radarChart',
+  templateUrl: './radarChart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class HomeComponent {
+export class radarChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class HomeComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_6LaDk8CFfM0wFpOL(bh);
+      this.sd_BfOkdbvKeKtEoLuw(bh);
     }
   }
 
@@ -50,41 +50,51 @@ export class HomeComponent {
     //append_listeners
   }
 
-  sd_6LaDk8CFfM0wFpOL(bh) {
+  sd_BfOkdbvKeKtEoLuw(bh) {
     try {
-      bh = this.sd_7NOw7MzT2p4e8v78(bh);
-      //appendnew_next_sd_6LaDk8CFfM0wFpOL
+      bh = this.sd_7nsBZoqB2J4WfGE1(bh);
+      //appendnew_next_sd_BfOkdbvKeKtEoLuw
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_6LaDk8CFfM0wFpOL');
+      return this.errorHandler(bh, e, 'sd_BfOkdbvKeKtEoLuw');
     }
   }
 
-  //appendnew_flow_HomeComponent_start
+  //appendnew_flow_radarChartComponent_start
 
-  sd_7NOw7MzT2p4e8v78(bh) {
-    try {
-      bh = this.sd_cD8aFynettfc9CeB(bh);
-      //appendnew_next_sd_7NOw7MzT2p4e8v78
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_7NOw7MzT2p4e8v78');
-    }
-  }
-
-  sd_cD8aFynettfc9CeB(bh) {
+  sd_7nsBZoqB2J4WfGE1(bh) {
     try {
       const page = this.page;
-      page.data = [
-        { value: 'delhi-0', viewValue: 'Delhi' },
-        { value: 'mumbai-1', viewValue: 'Mumbai' },
-        { value: 'pune-2', viewValue: 'Pune' },
+      page.radarChartData = [
+        {
+          data: [300, 500, 100],
+        },
       ];
 
-      //appendnew_next_sd_cD8aFynettfc9CeB
+      page.radarChartLabels = [
+        'Download Sales',
+        'In-Store Sales',
+        'Mail Sales',
+      ];
+
+      page.radarChartOptions = {
+        responsive: true,
+      };
+
+      bh = this.sd_KE3WZHpB8SONS1sB(bh);
+      //appendnew_next_sd_7nsBZoqB2J4WfGE1
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_cD8aFynettfc9CeB');
+      return this.errorHandler(bh, e, 'sd_7nsBZoqB2J4WfGE1');
+    }
+  }
+
+  sd_KE3WZHpB8SONS1sB(bh) {
+    try {
+      //appendnew_next_sd_KE3WZHpB8SONS1sB
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_KE3WZHpB8SONS1sB');
     }
   }
 
@@ -110,5 +120,5 @@ export class HomeComponent {
       throw e;
     }
   }
-  //appendnew_flow_HomeComponent_Catch
+  //appendnew_flow_radarChartComponent_Catch
 }

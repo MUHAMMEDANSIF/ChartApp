@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Home',
-  templateUrl: './Home.template.html',
+  selector: 'bh-polarChart',
+  templateUrl: './polarChart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class HomeComponent {
+export class polarChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class HomeComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_6LaDk8CFfM0wFpOL(bh);
+      this.sd_AF0207Zi7YUEZp8B(bh);
     }
   }
 
@@ -50,41 +50,55 @@ export class HomeComponent {
     //append_listeners
   }
 
-  sd_6LaDk8CFfM0wFpOL(bh) {
+  sd_AF0207Zi7YUEZp8B(bh) {
     try {
-      bh = this.sd_7NOw7MzT2p4e8v78(bh);
-      //appendnew_next_sd_6LaDk8CFfM0wFpOL
+      bh = this.sd_Bitduw3SEH9VDMLU(bh);
+      //appendnew_next_sd_AF0207Zi7YUEZp8B
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_6LaDk8CFfM0wFpOL');
+      return this.errorHandler(bh, e, 'sd_AF0207Zi7YUEZp8B');
     }
   }
 
-  //appendnew_flow_HomeComponent_start
+  //appendnew_flow_polarChartComponent_start
 
-  sd_7NOw7MzT2p4e8v78(bh) {
-    try {
-      bh = this.sd_cD8aFynettfc9CeB(bh);
-      //appendnew_next_sd_7NOw7MzT2p4e8v78
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_7NOw7MzT2p4e8v78');
-    }
-  }
-
-  sd_cD8aFynettfc9CeB(bh) {
+  sd_Bitduw3SEH9VDMLU(bh) {
     try {
       const page = this.page;
-      page.data = [
-        { value: 'delhi-0', viewValue: 'Delhi' },
-        { value: 'mumbai-1', viewValue: 'Mumbai' },
-        { value: 'pune-2', viewValue: 'Pune' },
+      page.polarareaChartData = [
+        {
+          data: [300, 500, 100],
+        },
       ];
 
-      //appendnew_next_sd_cD8aFynettfc9CeB
+      page.polarareaChartLabels = [
+        'Download Sales',
+        'In-Store Sales',
+        'Mail Sales',
+      ];
+
+      page.polarareaChartOptions = {
+        responsive: true,
+      };
+
+      bh = this.sd_YIwj35oUup1QMvsk(bh);
+      //appendnew_next_sd_Bitduw3SEH9VDMLU
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_cD8aFynettfc9CeB');
+      return this.errorHandler(bh, e, 'sd_Bitduw3SEH9VDMLU');
+    }
+  }
+
+  sd_YIwj35oUup1QMvsk(bh) {
+    try {
+      this.page.polarareaChartLabels = this.page.polarareaChartLabels;
+      this.page.polarareaChartOptions = this.page.polarareaChartOptions;
+      this.page.polarareaChartData = this.page.polarareaChartData;
+
+      //appendnew_next_sd_YIwj35oUup1QMvsk
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_YIwj35oUup1QMvsk');
     }
   }
 
@@ -110,5 +124,5 @@ export class HomeComponent {
       throw e;
     }
   }
-  //appendnew_flow_HomeComponent_Catch
+  //appendnew_flow_polarChartComponent_Catch
 }

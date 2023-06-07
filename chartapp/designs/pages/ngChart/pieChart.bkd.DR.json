@@ -1,0 +1,87 @@
+{
+    "efba96a2-bbbd-39ac-a84c-a48e210b919c": {
+        "paletteKey": "NG-ng-pie-chart",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Pie Chart",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "background:889EAF;",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[data]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[datasets]",
+                "_value": " page.pieChartData ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[labels]",
+                "_value": "page.pieChartLabels  ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[options]",
+                "_value": "page.pieChartOptions ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[colors]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[legend]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartHover)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartClick)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayout",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "50",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ]
+    }
+}

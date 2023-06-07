@@ -1,1 +1,11 @@
-{"classes":[]}
+{
+    "classes": [
+        "class1",
+        "class2",
+        "app-name",
+        "radio-form",
+        "radio",
+        "dropdown",
+        "chart"
+    ]
+}

@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Home',
-  templateUrl: './Home.template.html',
+  selector: 'bh-bubbleChart',
+  templateUrl: './bubbleChart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class HomeComponent {
+export class bubbleChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class HomeComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_6LaDk8CFfM0wFpOL(bh);
+      this.sd_xHC6VHcwo3Cf3Av1(bh);
     }
   }
 
@@ -50,41 +50,63 @@ export class HomeComponent {
     //append_listeners
   }
 
-  sd_6LaDk8CFfM0wFpOL(bh) {
+  sd_xHC6VHcwo3Cf3Av1(bh) {
     try {
-      bh = this.sd_7NOw7MzT2p4e8v78(bh);
-      //appendnew_next_sd_6LaDk8CFfM0wFpOL
+      bh = this.sd_Le8ucVzwQyqEocUk(bh);
+      //appendnew_next_sd_xHC6VHcwo3Cf3Av1
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_6LaDk8CFfM0wFpOL');
+      return this.errorHandler(bh, e, 'sd_xHC6VHcwo3Cf3Av1');
     }
   }
 
-  //appendnew_flow_HomeComponent_start
+  //appendnew_flow_bubbleChartComponent_start
 
-  sd_7NOw7MzT2p4e8v78(bh) {
-    try {
-      bh = this.sd_cD8aFynettfc9CeB(bh);
-      //appendnew_next_sd_7NOw7MzT2p4e8v78
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_7NOw7MzT2p4e8v78');
-    }
-  }
-
-  sd_cD8aFynettfc9CeB(bh) {
+  sd_Le8ucVzwQyqEocUk(bh) {
     try {
       const page = this.page;
-      page.data = [
-        { value: 'delhi-0', viewValue: 'Delhi' },
-        { value: 'mumbai-1', viewValue: 'Mumbai' },
-        { value: 'pune-2', viewValue: 'Pune' },
+      page.bubbleChartData = [
+        {
+          label: ['Deer Population'],
+          data: [
+            { x: 100, y: 5, r: 10 },
+            { x: 70, y: 30, r: 20 },
+            { x: 53, y: 5, r: 10 },
+            { x: 80, y: 52, r: 20 },
+          ],
+        },
+      ];
+      page.bubbleChartLabels = ['Deer Population'];
+
+      page.bubbleChartColors = [
+        {
+          backgroundColor: '#ff0000',
+          borderColor: 'rgba(148,159,177,1)',
+          pointBackgroundColor: 'rgba(148,159,177,1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+        },
       ];
 
-      //appendnew_next_sd_cD8aFynettfc9CeB
+      bh = this.sd_mkShER5EA4zhwGnE(bh);
+      //appendnew_next_sd_Le8ucVzwQyqEocUk
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_cD8aFynettfc9CeB');
+      return this.errorHandler(bh, e, 'sd_Le8ucVzwQyqEocUk');
+    }
+  }
+
+  sd_mkShER5EA4zhwGnE(bh) {
+    try {
+      this.page.bubbleChartLabels = this.page.bubbleChartLabels;
+      this.page.bubbleChartColors = this.page.bubbleChartColors;
+      this.page.bubbleChartData = this.page.bubbleChartData;
+
+      //appendnew_next_sd_mkShER5EA4zhwGnE
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_mkShER5EA4zhwGnE');
     }
   }
 
@@ -110,5 +132,5 @@ export class HomeComponent {
       throw e;
     }
   }
-  //appendnew_flow_HomeComponent_Catch
+  //appendnew_flow_bubbleChartComponent_Catch
 }

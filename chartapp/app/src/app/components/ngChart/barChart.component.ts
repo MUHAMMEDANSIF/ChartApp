@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Home',
-  templateUrl: './Home.template.html',
+  selector: 'bh-barChart',
+  templateUrl: './barChart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class HomeComponent {
+export class barChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class HomeComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_6LaDk8CFfM0wFpOL(bh);
+      this.sd_AcdXr1pyt1GrhUre(bh);
     }
   }
 
@@ -50,41 +50,53 @@ export class HomeComponent {
     //append_listeners
   }
 
-  sd_6LaDk8CFfM0wFpOL(bh) {
+  sd_AcdXr1pyt1GrhUre(bh) {
     try {
-      bh = this.sd_7NOw7MzT2p4e8v78(bh);
-      //appendnew_next_sd_6LaDk8CFfM0wFpOL
+      bh = this.sd_wx9BxQei03qC5QvY(bh);
+      //appendnew_next_sd_AcdXr1pyt1GrhUre
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_6LaDk8CFfM0wFpOL');
+      return this.errorHandler(bh, e, 'sd_AcdXr1pyt1GrhUre');
     }
   }
 
-  //appendnew_flow_HomeComponent_start
+  //appendnew_flow_barChartComponent_start
 
-  sd_7NOw7MzT2p4e8v78(bh) {
-    try {
-      bh = this.sd_cD8aFynettfc9CeB(bh);
-      //appendnew_next_sd_7NOw7MzT2p4e8v78
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_7NOw7MzT2p4e8v78');
-    }
-  }
-
-  sd_cD8aFynettfc9CeB(bh) {
+  sd_wx9BxQei03qC5QvY(bh) {
     try {
       const page = this.page;
-      page.data = [
-        { value: 'delhi-0', viewValue: 'Delhi' },
-        { value: 'mumbai-1', viewValue: 'Mumbai' },
-        { value: 'pune-2', viewValue: 'Pune' },
+      page.barChartData = [
+        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
+        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
       ];
 
-      //appendnew_next_sd_cD8aFynettfc9CeB
+      page.barChartLabels = [
+        '2006',
+        '2007',
+        '2008',
+        '2009',
+        '2010',
+        '2011',
+        '2012',
+      ];
+
+      bh = this.sd_rPQVZTJFmxVWWiMO(bh);
+      //appendnew_next_sd_wx9BxQei03qC5QvY
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_cD8aFynettfc9CeB');
+      return this.errorHandler(bh, e, 'sd_wx9BxQei03qC5QvY');
+    }
+  }
+
+  sd_rPQVZTJFmxVWWiMO(bh) {
+    try {
+      this.page.barChartLabels = this.page.barChartLabels;
+      this.page.barChartData = this.page.barChartData;
+
+      //appendnew_next_sd_rPQVZTJFmxVWWiMO
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_rPQVZTJFmxVWWiMO');
     }
   }
 
@@ -110,5 +122,5 @@ export class HomeComponent {
       throw e;
     }
   }
-  //appendnew_flow_HomeComponent_Catch
+  //appendnew_flow_barChartComponent_Catch
 }

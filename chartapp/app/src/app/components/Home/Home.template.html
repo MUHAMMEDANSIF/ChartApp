@@ -1,4 +1,20 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-  <h1>
-    Chart Application</h1><router-outlet></router-outlet>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <h1 class="app-name">
+      Chart Application</h1>
+    <form class="radio-form">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-radio-button class="radio" [required]="false">Ng Charts</mat-radio-button><mat-radio-button class="radio" [required]="false">Ngx Charts</mat-radio-button></div>
+    </form>
+  </div>
+  <div class="dropdown">
+    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+      <mat-label></mat-label>
+      <mat-select matNativeControl placeholder="Select" [required]="false">
+        <mat-optgroup [label] [disabled] *ngFor="let option of page.data; let i=index">
+          <mat-option matNativeControl [value]="option.value">{{option.viewValue}}</mat-option>
+        </mat-optgroup>
+      </mat-select>
+
+    </mat-form-field>
+  </div><router-outlet></router-outlet>
 </div>

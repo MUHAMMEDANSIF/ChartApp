@@ -2,3 +2,44 @@
 
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
+
+.class1 {
+  border-radius:10px;
+  flex-basis:10%;
+  height:100px;
+}
+.class2 {
+  border-radius:10px;
+  flex-basis:10%;
+  height:100px;
+}
+
+body {
+    background-color: white;
+}
+
+.app-name {
+    text-align: center;
+}
+
+.radio-form {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.radio {
+    margin: 30px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}

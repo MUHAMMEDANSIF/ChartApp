@@ -1,0 +1,93 @@
+[
+    {
+        "id": "sd_zDTYDoND2RApRe3A",
+        "type": "tab",
+        "createdDate": "2023-06-07T10:34:57.352Z",
+        "label": "barChart",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "barChartComponent"
+    },
+    {
+        "id": "sd_AcdXr1pyt1GrhUre",
+        "type": "OnInit",
+        "z": "sd_zDTYDoND2RApRe3A",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_AcdXr1pyt1GrhUre",
+        "category": "Lifecycle Events",
+        "x": 65,
+        "y": 40,
+        "wires": [
+            [
+                "sd_wx9BxQei03qC5QvY"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "barChartComponent"
+    },
+    {
+        "id": "sd_rPQVZTJFmxVWWiMO",
+        "type": "PageVariables",
+        "z": "sd_zDTYDoND2RApRe3A",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "barChartLabels",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "barChartLabels"
+                }
+            },
+            {
+                "textIp": "barChartData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "barChartData"
+                }
+            }
+        ],
+        "functionName": "sd_rPQVZTJFmxVWWiMO",
+        "category": "Function",
+        "x": 305,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "barChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_wx9BxQei03qC5QvY",
+        "type": "Script",
+        "z": "sd_zDTYDoND2RApRe3A",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.barChartData = [\n        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },\n        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }\n    ];\n    \npage.barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];",
+        "functionName": "sd_wx9BxQei03qC5QvY",
+        "category": "Function",
+        "x": 205,
+        "y": 40,
+        "wires": [
+            [
+                "sd_rPQVZTJFmxVWWiMO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "barChartComponent",
+        "generated": true
+    }
+]
