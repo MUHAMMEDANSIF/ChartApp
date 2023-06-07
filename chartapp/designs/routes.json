@@ -2,8 +2,9 @@
     "routes": [
         {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "Home",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",

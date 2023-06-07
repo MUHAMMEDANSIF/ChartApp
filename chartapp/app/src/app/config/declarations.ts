@@ -15,6 +15,12 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-pieChartComponent
+import { pieChartComponent } from '../components/ngChart/pieChart.component';
+//CORE_REFERENCE_IMPORT-barChartComponent
+import { barChartComponent } from '../components/ngChart/barChart.component';
+//CORE_REFERENCE_IMPORT-lineChartComponent
+import { lineChartComponent } from '../components/ngChart/lineChart.component';
 
 /**
  * Reads datasource object and injects the datasource object into window object
@@ -30,7 +36,7 @@ export function startupServiceFactory(startupService: NDataSourceService) {
         });
       });
     });
-  }
+  };
 }
 
 /**
@@ -47,6 +53,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pieChartComponent
+  pieChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-barChartComponent
+  barChartComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-lineChartComponent
+  lineChartComponent,
 ];
 
 /**
@@ -72,7 +84,7 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: 'Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

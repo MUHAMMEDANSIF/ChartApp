@@ -1,0 +1,87 @@
+{
+    "d0e6421c-6bb8-5b34-46fa-7648abe27f82": {
+        "paletteKey": "NG-ng-bar-chart",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Bar Chart",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "background:889EAF; ",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[data]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[datasets]",
+                "_value": "page.barChartData",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[labels]",
+                "_value": "page.barChartLabels",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[options]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[colors]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[legend]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartHover)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(chartClick)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayout",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "50",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ]
+    }
+}
