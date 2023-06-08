@@ -564,24 +564,20 @@ export class Api {
     try {
       bh.local.data = [
         {
-          name: 'India',
-          value: 135148,
+          name: 'Germany',
+          series: [
+            { name: '2010', value: 40632 },
+            { name: '2000', value: 36953 },
+            { name: '1990', value: 31476 },
+          ],
         },
         {
           name: 'United States',
-          value: 121652,
-        },
-        {
-          name: 'Germany',
-          value: 157885,
-        },
-        {
-          name: 'France',
-          value: 965782,
-        },
-        {
-          name: 'United Kingdom',
-          value: 987564,
+          series: [
+            { name: '2010', value: 49737 },
+            { name: '2000', value: 45986 },
+            { name: '1990', value: 37060 },
+          ],
         },
       ];
       this.tracerService.sendData(spanInst, bh);

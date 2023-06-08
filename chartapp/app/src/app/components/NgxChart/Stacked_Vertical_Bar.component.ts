@@ -52,7 +52,7 @@ export class Stacked_Vertical_BarComponent {
 
   sd_e41y2nv5cijsrxOn(bh) {
     try {
-      bh = this.sd_a5evIKPSKvti5NJ6(bh);
+      bh = this.sd_G7u3K6NIWU7G84Up(bh);
       //appendnew_next_sd_e41y2nv5cijsrxOn
       return bh;
     } catch (e) {
@@ -62,27 +62,45 @@ export class Stacked_Vertical_BarComponent {
 
   //appendnew_flow_Stacked_Vertical_BarComponent_start
 
+  async sd_G7u3K6NIWU7G84Up(bh) {
+    try {
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ngx/verticalbarchart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      this.page.sverticalbarChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
+
+      bh = this.sd_a5evIKPSKvti5NJ6(bh);
+      //appendnew_next_sd_G7u3K6NIWU7G84Up
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_G7u3K6NIWU7G84Up');
+    }
+  }
+
   sd_a5evIKPSKvti5NJ6(bh) {
     try {
-      const page = this.page;
-      page.sverticalbarChartData = [
-        {
-          name: 'Germany',
-          series: [
-            { name: '2010', value: 40632 },
-            { name: '2000', value: 36953 },
-            { name: '1990', value: 31476 },
-          ],
-        },
-        {
-          name: 'United States',
-          series: [
-            { name: '2010', value: 49737 },
-            { name: '2000', value: 45986 },
-            { name: '1990', value: 37060 },
-          ],
-        },
-      ];
+      const page = this.page; // page.sverticalbarChartData =  [
+      //   {
+      //     "name": "Germany",
+      //     "series": [{"name": "2010","value": 40632},
+      //       {"name": "2000","value": 36953},
+      //       {"name": "1990","value": 31476} ]},
+      //   {
+      //     "name": "United States",
+      //     "series": [{"name": "2010","value": 49737},
+      //       {"name": "2000","value": 45986},
+      //       {"name": "1990","value": 37060}]},
+
+      // ];
+
+      console.log(page.sverticalbarChartData);
 
       bh = this.sd_OKnP2cTNHBjrG2ls(bh);
       //appendnew_next_sd_a5evIKPSKvti5NJ6

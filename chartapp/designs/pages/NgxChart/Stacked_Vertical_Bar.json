@@ -23,7 +23,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_a5evIKPSKvti5NJ6"
+                "sd_G7u3K6NIWU7G84Up"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -98,14 +98,17 @@
         "paramMappingObj": {},
         "functionName": "sd_G7u3K6NIWU7G84Up",
         "category": "HTTP",
-        "x": 125,
-        "y": 180,
+        "x": 145,
+        "y": 40,
         "wires": [
-            []
+            [
+                "sd_a5evIKPSKvti5NJ6"
+            ]
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": true,
-        "serviceName": "Stacked_Vertical_BarComponent"
+        "generateNext": false,
+        "serviceName": "Stacked_Vertical_BarComponent",
+        "generated": true
     },
     {
         "id": "sd_a5evIKPSKvti5NJ6",
@@ -114,11 +117,11 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.sverticalbarChartData =  [\n  {\n    \"name\": \"Germany\",\n    \"series\": [{\"name\": \"2010\",\"value\": 40632},\n      {\"name\": \"2000\",\"value\": 36953},\n      {\"name\": \"1990\",\"value\": 31476} ]},\n  {\n    \"name\": \"United States\",\n    \"series\": [{\"name\": \"2010\",\"value\": 49737},\n      {\"name\": \"2000\",\"value\": 45986},\n      {\"name\": \"1990\",\"value\": 37060}]},\n\n];",
+        "script": "// page.sverticalbarChartData =  [\n//   {\n//     \"name\": \"Germany\",\n//     \"series\": [{\"name\": \"2010\",\"value\": 40632},\n//       {\"name\": \"2000\",\"value\": 36953},\n//       {\"name\": \"1990\",\"value\": 31476} ]},\n//   {\n//     \"name\": \"United States\",\n//     \"series\": [{\"name\": \"2010\",\"value\": 49737},\n//       {\"name\": \"2000\",\"value\": 45986},\n//       {\"name\": \"1990\",\"value\": 37060}]},\n\n// ];\n\nconsole.log(page.sverticalbarChartData)",
         "functionName": "sd_a5evIKPSKvti5NJ6",
         "category": "Function",
-        "x": 240,
-        "y": 40,
+        "x": 225,
+        "y": 60,
         "wires": [
             [
                 "sd_OKnP2cTNHBjrG2ls"

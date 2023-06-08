@@ -9,10 +9,10 @@
   <div class="dropdown">
     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <mat-label></mat-label>
-      <mat-select matNativeControl placeholder="Select" [required]="false" (selectionChange)="sd_zq8SW4VuuAPSxuur($event)">
-        <mat-optgroup [label] [disabled] *ngFor="let option of page.data; let i=index">
-          <mat-option matNativeControl [value]="option.value">{{option.viewValue}}</mat-option>
-        </mat-optgroup>
+      <mat-select placeholder="Select" [required]="false" (selectionChange)="sd_zq8SW4VuuAPSxuur($event)">
+        <ng-template ngFor let-option [ngForOf]="page.data" let-i="index">
+          <mat-option [value]="option.value">{{option.viewValue}}</mat-option>
+        </ng-template>
       </mat-select>
 
     </mat-form-field>
