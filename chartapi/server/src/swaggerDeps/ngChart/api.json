@@ -1,0 +1,41 @@
+{
+    "/ng/linechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    },
+    "/ng/piechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    },
+    "/ng/barchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    }
+}

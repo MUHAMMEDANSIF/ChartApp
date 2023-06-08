@@ -219,13 +219,13 @@
                 },
                 {
                     "_key": "[datasets]",
-                    "_value": "page.lineChartData ",
+                    "_value": "page.lineChartData.data",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.lineChartLabels ",
+                    "_value": "page.lineChartData.label",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

@@ -52,7 +52,7 @@ export class lineChartComponent {
 
   sd_NkEMslfE88TTE1oe(bh) {
     try {
-      bh = this.sd_kZ3cNHBFPu7TptVH(bh);
+      bh = this.sd_Ny1WFQ2vDMbB5Rp6(bh);
       //appendnew_next_sd_NkEMslfE88TTE1oe
       return bh;
     } catch (e) {
@@ -77,59 +77,25 @@ export class lineChartComponent {
 
   //appendnew_flow_lineChartComponent_start
 
-  sd_kZ3cNHBFPu7TptVH(bh) {
+  async sd_Ny1WFQ2vDMbB5Rp6(bh) {
     try {
-      const page = this.page;
-      page.lineChartData = [
-        {
-          data: [65, 59, 80, 81, 56, 55, 40, 10, 20, 30, 40, 50],
-          label: 'Series A',
-        },
-        {
-          data: [28, 48, 40, 19, 86, 25, 90, 11, 23, 31, 42, 51],
-          label: 'Series B',
-        },
-        {
-          data: [18, 45, 75, 9, 100, 26, 40, 12, 24, 32, 43, 52],
-          label: 'Series C',
-        },
-        {
-          data: [15, 42, 76, 7, 105, 25, 40, 12, 24, 32, 43, 52],
-          label: 'Series D',
-        },
-        {
-          data: [19, 48, 77, 5, 103, 27, 40, 12, 24, 32, 43, 52],
-          label: 'Series E',
-        },
-        {
-          data: [28, 47, 40, 19, 86, 28, 90, 11, 23, 31, 42, 51],
-          label: 'Series F',
-        },
-        {
-          data: [25, 46, 42, 15, 85, 27, 90, 11, 23, 31, 42, 51],
-          label: 'Series G',
-        },
-      ];
-      page.lineChartLabels = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'June',
-        'July',
-        'Aug',
-        'Sep',
-        'Oct',
-        'nov',
-        'dec',
-      ];
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/linechart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      this.page.lineChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
 
       bh = this.sd_KWACfrWTFn886CPr(bh);
-      //appendnew_next_sd_kZ3cNHBFPu7TptVH
+      //appendnew_next_sd_Ny1WFQ2vDMbB5Rp6
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_kZ3cNHBFPu7TptVH');
+      return await this.errorHandler(bh, e, 'sd_Ny1WFQ2vDMbB5Rp6');
     }
   }
 
