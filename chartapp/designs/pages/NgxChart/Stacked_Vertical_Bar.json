@@ -23,7 +23,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_G7u3K6NIWU7G84Up"
+                "sd_a5evIKPSKvti5NJ6"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -85,10 +85,10 @@
             "mapVarType": "this.page",
             "mapVarValue": ""
         },
-        "resultMapping": "this.page.pieChartData",
+        "resultMapping": "this.page.sverticalbarChartData",
         "resultMappingObj": {
             "mapVarType": "this.page",
-            "mapVarValue": "pieChartData"
+            "mapVarValue": "sverticalbarChartData"
         },
         "headers": {},
         "headersObj": [],
@@ -98,7 +98,26 @@
         "paramMappingObj": {},
         "functionName": "sd_G7u3K6NIWU7G84Up",
         "category": "HTTP",
-        "x": 145,
+        "x": 125,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Stacked_Vertical_BarComponent"
+    },
+    {
+        "id": "sd_a5evIKPSKvti5NJ6",
+        "type": "Script",
+        "z": "sd_73Nu0S0Jcw7adxCx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.sverticalbarChartData =  [\n  {\n    \"name\": \"Germany\",\n    \"series\": [{\"name\": \"2010\",\"value\": 40632},\n      {\"name\": \"2000\",\"value\": 36953},\n      {\"name\": \"1990\",\"value\": 31476} ]},\n  {\n    \"name\": \"United States\",\n    \"series\": [{\"name\": \"2010\",\"value\": 49737},\n      {\"name\": \"2000\",\"value\": 45986},\n      {\"name\": \"1990\",\"value\": 37060}]},\n\n];",
+        "functionName": "sd_a5evIKPSKvti5NJ6",
+        "category": "Function",
+        "x": 240,
         "y": 40,
         "wires": [
             [

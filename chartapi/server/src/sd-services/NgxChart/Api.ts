@@ -511,20 +511,24 @@ export class Api {
     try {
       bh.local.data = [
         {
-          name: 'Germany',
-          series: [
-            { name: '2010', value: 40632 },
-            { name: '2000', value: 36953 },
-            { name: '1990', value: 31476 },
-          ],
+          name: 'India',
+          value: 135148,
         },
         {
           name: 'United States',
-          series: [
-            { name: '2010', value: 49737 },
-            { name: '2000', value: 45986 },
-            { name: '1990', value: 37060 },
-          ],
+          value: 121652,
+        },
+        {
+          name: 'Germany',
+          value: 157885,
+        },
+        {
+          name: 'France',
+          value: 965782,
+        },
+        {
+          name: 'United Kingdom',
+          value: 987564,
         },
       ];
       this.tracerService.sendData(spanInst, bh);
@@ -560,20 +564,24 @@ export class Api {
     try {
       bh.local.data = [
         {
-          name: 'Germany',
-          series: [
-            { name: '2010', value: 40632 },
-            { name: '2000', value: 36953 },
-            { name: '1990', value: 31476 },
-          ],
+          name: 'India',
+          value: 135148,
         },
         {
           name: 'United States',
-          series: [
-            { name: '2010', value: 49737 },
-            { name: '2000', value: 45986 },
-            { name: '1990', value: 37060 },
-          ],
+          value: 121652,
+        },
+        {
+          name: 'Germany',
+          value: 157885,
+        },
+        {
+          name: 'France',
+          value: 965782,
+        },
+        {
+          name: 'United Kingdom',
+          value: 987564,
         },
       ];
       this.tracerService.sendData(spanInst, bh);

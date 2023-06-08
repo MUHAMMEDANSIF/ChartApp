@@ -68,7 +68,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.horizontalbarChartData = [\n{ \"name\": \"Germany\", \"value\": 40632,},\n{ \"name\": \"United States\", \"value\": 50000, },\n{ \"name\": \"France\", \"value\": 36745,},\n{ \"name\": \"United Kingdom\", \"value\": 36240, },\n{\"name\": \"Spain\", \"value\": 33000, },\n{\"name\": \"Italy\", \"value\": 35800, }]",
+        "script": "page.horizontalbarChartData =  [\n{ \"name\": \"Germany\", \"value\": 40632,},\n{ \"name\": \"United States\", \"value\": 50000, },\n{ \"name\": \"France\", \"value\": 36745,},\n{ \"name\": \"United Kingdom\", \"value\": 36240, },\n{\"name\": \"Spain\", \"value\": 33000, },\n{\"name\": \"Italy\", \"value\": 35800, }]",
         "functionName": "sd_69B76XtSiDzrdkOG",
         "category": "Function",
         "x": 165,

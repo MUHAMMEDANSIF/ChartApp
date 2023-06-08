@@ -246,7 +246,7 @@
                 },
                 {
                     "_key": "[showYAxisLabel]",
-                    "_value": "false",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
