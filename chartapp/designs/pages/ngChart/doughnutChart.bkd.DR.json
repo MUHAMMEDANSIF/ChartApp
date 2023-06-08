@@ -219,13 +219,13 @@
                 },
                 {
                     "_key": "[datasets]",
-                    "_value": "page.doughnutChartData ",
+                    "_value": "page.doughnutChartData.data",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.doughnutChartLabels ",
+                    "_value": "page.doughnutChartData.label",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

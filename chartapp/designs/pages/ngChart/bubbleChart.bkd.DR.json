@@ -201,7 +201,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": " background:pink; ",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -219,7 +219,7 @@
                 },
                 {
                     "_key": "[options]",
-                    "_value": "page.bubbleChartOptions ",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -237,13 +237,13 @@
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.bubbleChartLabels ",
+                    "_value": " page.bubbleChartLabels",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[colors]",
-                    "_value": "page.bubbleChartColors",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 }

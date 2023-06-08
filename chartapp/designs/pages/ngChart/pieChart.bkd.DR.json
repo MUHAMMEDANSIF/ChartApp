@@ -225,13 +225,13 @@
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.pieChartLabels",
+                    "_value": "page.pieChartLabel",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[options]",
-                    "_value": "",
+                    "_value": "page.pieChartOptions",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

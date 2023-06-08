@@ -911,7 +911,7 @@
                     },
                     {
                         "_key": "[groupOptions]",
-                        "_value": "group",
+                        "_value": "noGroup",
                         "_type": "dav",
                         "_attrDef": "p"
                     },
@@ -920,21 +920,21 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p",
-                        "_visibility": true
+                        "_visibility": false
                     },
                     {
                         "_key": "[disableGroup]",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p",
-                        "_visibility": true
+                        "_visibility": false
                     },
                     {
                         "_key": "[optionDatasource]",
                         "_value": "",
                         "_type": "a",
                         "_attrDef": "p",
-                        "_visibility": true
+                        "_visibility": false
                     },
                     {
                         "_key": "optionValue",

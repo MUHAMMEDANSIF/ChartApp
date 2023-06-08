@@ -106,7 +106,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.data = [\n   {value: 'line', viewValue: 'line'},\n   {value: 'bar', viewValue: 'bar'},\n   {value: 'pie', viewValue: 'pie'},\n   {value: 'doughnut', viewValue: 'doughnut'},\n   {value: 'bubble', viewValue: 'bubble'},\n   {value: 'radar', viewValue: 'radar'},\n   {value: 'polar', viewValue: 'polar'}\n ]",
+        "script": "page.data = [\n   {value: 'line', viewValue: 'line'},\n   {value: 'bar', viewValue: 'bar'},\n   {value: 'pie', viewValue: 'pie'},\n   {value: 'doughnut', viewValue: 'doughnut'},\n   {value: 'bubble', viewValue: 'bubble'},\n   {value: 'radar', viewValue: 'radar'},\n   {value: 'polar', viewValue: 'polar'}\n ]\n\n\n",
         "functionName": "sd_mYc8zquOsXJF2LNA",
         "category": "Function",
         "x": 245,
