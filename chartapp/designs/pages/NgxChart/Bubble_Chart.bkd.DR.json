@@ -357,7 +357,7 @@
                 },
                 {
                     "_key": "[animations]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
