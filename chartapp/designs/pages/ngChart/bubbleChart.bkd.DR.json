@@ -1,63 +1,253 @@
 {
-    "dc22e08e-efef-5f85-8dab-b17b55200e15": {
-        "paletteKey": "NG-ng-bubble-chart",
+    "0e4edc1c-ff5a-0438-a5a3-5d76651e4b84": {
+        "paletteKey": "Html5",
+        "isAdvancedComponent": true,
         "commentid": null,
         "designerReference": [
             {
-                "_key": "componentLabel",
-                "_value": "Bubble Chart",
-                "_type": "kv",
-                "_attrDef": "p",
-                "_useAsLabel": true
-            },
-            {
                 "_key": "style",
-                "_value": " background:pink; ",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "class",
-                "_value": "",
+                "_value": [
+                    "chart"
+                ],
                 "_type": "dav",
                 "_attrDef": "p"
             },
             {
-                "_key": "[datasets]",
-                "_value": " page.bubbleChartData",
-                "_type": "kv",
-                "_attrDef": "p"
+                "_key": "htmlElement",
+                "_value": "div",
+                "_type": "dav",
+                "_attrDef": "p",
+                "_useAsLabel": true
             },
             {
-                "_key": "[options]",
-                "_value": "page.bubbleChartOptions ",
-                "_type": "kv",
-                "_attrDef": "p"
+                "_key": "tagType",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
             },
             {
-                "_key": "fxLayout",
+                "_key": "name",
                 "_value": "",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "p",
+                "_visibility": false
             },
             {
-                "_key": "fxFlex",
-                "_value": "50",
+                "_key": "sandbox",
+                "_value": "",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "p",
+                "_visibility": false
             },
             {
-                "_key": "[labels]",
-                "_value": "page.bubbleChartLabels ",
+                "_key": "src",
+                "_value": "",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "p",
+                "_visibility": false
             },
             {
-                "_key": "[colors]",
-                "_value": "page.bubbleChartColors",
+                "_key": "srcdoc",
+                "_value": "",
                 "_type": "kv",
-                "_attrDef": "p"
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "width",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "[autoplay]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "[loop]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "data",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "audioSource",
+                "_value": [],
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "videoSource",
+                "_value": [],
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "audioDatasource",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "audioSrc",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "audioType",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "videoDatasource",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "videoSrc",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "videoType",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(audioplay)",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(videoplay)",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(audiopause)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(videopause)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(audioended)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
+            },
+            {
+                "_key": "(videoended)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_visibility": false
             }
-        ]
+        ],
+        "dc22e08e-efef-5f85-8dab-b17b55200e15": {
+            "paletteKey": "NG-ng-bubble-chart",
+            "parentEditorKey": "0e4edc1c-ff5a-0438-a5a3-5d76651e4b84",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Bubble Chart",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": " background:pink; ",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[datasets]",
+                    "_value": " page.bubbleChartData",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[options]",
+                    "_value": "page.bubbleChartOptions ",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayout",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "50",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[labels]",
+                    "_value": "page.bubbleChartLabels ",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[colors]",
+                    "_value": "page.bubbleChartColors",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ]
+        }
     }
 }
