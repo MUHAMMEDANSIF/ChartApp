@@ -1,39 +1,39 @@
 [
     {
-        "id": "sd_3Gu1p22HVUJCMCoV",
+        "id": "sd_9qfzLbOAM4wwBsap",
         "type": "tab",
-        "createdDate": "2023-06-07T10:29:39.936Z",
-        "label": "Hoizontal_Bar_Chart",
+        "createdDate": "2023-06-07T12:57:39.726Z",
+        "label": "Line_Chart",
         "disabled": false,
         "info": "",
         "functionSeq": 0,
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Line_ChartComponent"
     },
     {
-        "id": "sd_yk0bKsWMmInAv4HS",
+        "id": "sd_AlcFXWWkdVWbutWI",
         "type": "OnInit",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_9qfzLbOAM4wwBsap",
         "viewType": "common",
         "nodeType": "start",
         "name": "",
-        "functionName": "sd_yk0bKsWMmInAv4HS",
+        "functionName": "sd_AlcFXWWkdVWbutWI",
         "category": "Lifecycle Events",
         "x": 30,
         "y": 30,
         "wires": [
             [
-                "sd_elJuP7kQDJ5SM0Tq"
+                "sd_7QbU97R08x0u1KfA"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Line_ChartComponent"
     },
     {
-        "id": "sd_tq0PKzgdfsSHpqVu",
+        "id": "sd_tmWcBJYyF7BFV7kq",
         "type": "PageVariables",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_9qfzLbOAM4wwBsap",
         "viewType": "pages",
         "nodeType": "flow",
         "name": "",
@@ -42,14 +42,14 @@
         "operation": "set",
         "globalVariables": [
             {
-                "textIp": "horizontalbarChartData",
+                "textIp": "lineChartData",
                 "typedIpValue": {
                     "type": "this.page",
-                    "value": "horizontalbarChartData"
+                    "value": "lineChartData"
                 }
             }
         ],
-        "functionName": "sd_tq0PKzgdfsSHpqVu",
+        "functionName": "sd_tmWcBJYyF7BFV7kq",
         "category": "Function",
         "x": 265,
         "y": 40,
@@ -58,56 +58,62 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "serviceName": "Line_ChartComponent",
         "generated": true
     },
     {
-        "id": "sd_elJuP7kQDJ5SM0Tq",
+        "id": "sd_7QbU97R08x0u1KfA",
         "type": "HttpRequest",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_9qfzLbOAM4wwBsap",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
-        "urlMapping": "\"http://localhost:8081/api/ngx/horizontalbarchart\"",
+        "urlMapping": "\"http://localhost:8081/api/ngx/linechart\"",
         "urlMappingObj": {
             "mapVarType": "str",
-            "mapVarValue": "http://localhost:8081/api/ngx/horizontalbarchart"
+            "mapVarValue": "http://localhost:8081/api/ngx/linechart"
         },
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
         "observe": "",
+        "observeMapping": "",
         "observeMappingObj": {},
         "reportProgress": false,
         "withCreds": false,
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
         },
-        "resultMapping": "this.page.horizontalbarChartData",
+        "resultMapping": "this.page.lineChartData",
         "resultMappingObj": {
             "mapVarType": "this.page",
-            "mapVarValue": "horizontalbarChartData"
+            "mapVarValue": "lineChartData"
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
-        "functionName": "sd_elJuP7kQDJ5SM0Tq",
+        "functionName": "sd_7QbU97R08x0u1KfA",
         "category": "HTTP",
         "x": 145,
         "y": 40,
         "wires": [
             [
-                "sd_tq0PKzgdfsSHpqVu"
+                "sd_tmWcBJYyF7BFV7kq"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "serviceName": "Line_ChartComponent",
         "generated": true
     }
 ]

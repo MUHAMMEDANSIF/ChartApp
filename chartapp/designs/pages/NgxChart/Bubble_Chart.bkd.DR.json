@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "fde7b799-ec96-b0e4-7af1-bc358d6030d5": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,18 +187,11 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "eda747c9-9b35-4e79-82a4-919036f83ea5": {
+            "paletteKey": "NG-bubble-chart",
+            "parentEditorKey": "fde7b799-ec96-b0e4-7af1-bc358d6030d5",
             "commentid": null,
             "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -212,28 +205,11 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[gradient]",
-                    "_value": "",
+                    "_key": "componentLabel",
+                    "_value": "Bubble Chart",
                     "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[xAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[yAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[legend]",
-                    "_value": "false",
-                    "_type": "kv",
-                    "_attrDef": "p"
+                    "_attrDef": "p",
+                    "_useAsLabel": true
                 },
                 {
                     "_key": "[showXAxisLabel]",
@@ -260,20 +236,62 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "(select)",
+                    "_key": "[xAxis]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxis]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legend]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showGridLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[roundDomains]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[minRadius]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[maxRadius]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.bubbleChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +303,102 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[autoScale]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[schemeType]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendPosition]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMax]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMax]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[timeline]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTickFormatting]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"

@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "52a1d1be-7acb-c530-3409-e67ea8ba9f83": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -12,9 +12,7 @@
             },
             {
                 "_key": "class",
-                "_value": [
-                    "chart"
-                ],
+                "_value": "",
                 "_type": "dav",
                 "_attrDef": "p"
             },
@@ -27,7 +25,7 @@
             },
             {
                 "_key": "tagType",
-                "_value": "div",
+                "_value": "",
                 "_type": "a",
                 "_attrDef": "p",
                 "_visibility": false
@@ -187,14 +185,14 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "efb2019a-4df0-c5a1-a014-42f495b49c67": {
+            "paletteKey": "NG-stacked-bar-chart-horizontal",
+            "parentEditorKey": "52a1d1be-7acb-c530-3409-e67ea8ba9f83",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
+                    "_value": "Stacked Horizontal Bar Chart",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -231,7 +229,7 @@
                 },
                 {
                     "_key": "[legend]",
-                    "_value": "false",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,7 +265,7 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +283,96 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[schemeType]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[roundDomains]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showGridLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showDataLabel]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[barPadding]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMax]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"

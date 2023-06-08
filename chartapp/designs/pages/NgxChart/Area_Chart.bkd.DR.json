@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "9ef76ead-d358-516c-20c6-6c52244855dd": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,18 +187,11 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "ab4c98ba-e8da-0c8e-cf31-458ac4b017a6": {
+            "paletteKey": "NG-area-chart",
+            "parentEditorKey": "9ef76ead-d358-516c-20c6-6c52244855dd",
             "commentid": null,
             "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
                 {
                     "_key": "style",
                     "_value": "",
@@ -210,6 +203,13 @@
                     "_value": "",
                     "_type": "dav",
                     "_attrDef": "p"
+                },
+                {
+                    "_key": "componentLabel",
+                    "_value": "Area Chart",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
                 },
                 {
                     "_key": "[gradient]",
@@ -237,13 +237,13 @@
                 },
                 {
                     "_key": "[showXAxisLabel]",
-                    "_value": "true",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showYAxisLabel]",
-                    "_value": "true",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,13 +267,13 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "'cool'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.areaChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +285,114 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[schemeType]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showGridLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendPosition]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[autoScale]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMax]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMax]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[timeline]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTickFormatting]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"

@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Hoizontal_Bar_Chart',
-  templateUrl: './Hoizontal_Bar_Chart.template.html',
+  selector: 'bh-Bubble_Chart',
+  templateUrl: './Bubble_Chart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class Hoizontal_Bar_ChartComponent {
+export class Bubble_ChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class Hoizontal_Bar_ChartComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_yk0bKsWMmInAv4HS(bh);
+      this.sd_zSIRJX4pjlOXtigo(bh);
     }
   }
 
@@ -50,48 +50,46 @@ export class Hoizontal_Bar_ChartComponent {
     //append_listeners
   }
 
-  sd_yk0bKsWMmInAv4HS(bh) {
+  sd_zSIRJX4pjlOXtigo(bh) {
     try {
-      bh = this.sd_elJuP7kQDJ5SM0Tq(bh);
-      //appendnew_next_sd_yk0bKsWMmInAv4HS
+      bh = this.sd_xRc7xGuzOsp0HoRp(bh);
+      //appendnew_next_sd_zSIRJX4pjlOXtigo
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_yk0bKsWMmInAv4HS');
+      return this.errorHandler(bh, e, 'sd_zSIRJX4pjlOXtigo');
     }
   }
 
-  //appendnew_flow_Hoizontal_Bar_ChartComponent_start
+  //appendnew_flow_Bubble_ChartComponent_start
 
-  async sd_elJuP7kQDJ5SM0Tq(bh) {
+  async sd_xRc7xGuzOsp0HoRp(bh) {
     try {
       let requestOptions = {
-        url: 'http://localhost:8081/api/ngx/horizontalbarchart',
+        url: 'http://localhost:8081/api/ngx/bubblechart',
         method: 'get',
         responseType: 'json',
         headers: {},
         params: {},
         body: undefined,
       };
-      this.page.horizontalbarChartData = await this.sdService.nHttpRequest(
+      this.page.bubbleChartData = await this.sdService.nHttpRequest(
         requestOptions
       );
 
-      bh = this.sd_tq0PKzgdfsSHpqVu(bh);
-      //appendnew_next_sd_elJuP7kQDJ5SM0Tq
+      bh = this.sd_ajJnjLSZdjluSTbJ(bh);
+      //appendnew_next_sd_xRc7xGuzOsp0HoRp
       return bh;
     } catch (e) {
-      return await this.errorHandler(bh, e, 'sd_elJuP7kQDJ5SM0Tq');
+      return await this.errorHandler(bh, e, 'sd_xRc7xGuzOsp0HoRp');
     }
   }
 
-  sd_tq0PKzgdfsSHpqVu(bh) {
+  sd_ajJnjLSZdjluSTbJ(bh) {
     try {
-      this.page.horizontalbarChartData = this.page.horizontalbarChartData;
-
-      //appendnew_next_sd_tq0PKzgdfsSHpqVu
+      //appendnew_next_sd_ajJnjLSZdjluSTbJ
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_tq0PKzgdfsSHpqVu');
+      return this.errorHandler(bh, e, 'sd_ajJnjLSZdjluSTbJ');
     }
   }
 
@@ -117,5 +115,5 @@ export class Hoizontal_Bar_ChartComponent {
       throw e;
     }
   }
-  //appendnew_flow_Hoizontal_Bar_ChartComponent_Catch
+  //appendnew_flow_Bubble_ChartComponent_Catch
 }

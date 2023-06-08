@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "53b882be-218a-d53f-9a7b-664fbfbff4f1": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,14 +187,14 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "1e3bdd30-7c03-a6cc-c223-246d2a07fdae": {
+            "paletteKey": "NG-gauge-chart",
+            "parentEditorKey": "53b882be-218a-d53f-9a7b-664fbfbff4f1",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
+                    "_value": "Gauge Chart",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -212,54 +212,6 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[gradient]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[xAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[yAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[legend]",
-                    "_value": "false",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[showXAxisLabel]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[showYAxisLabel]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[yAxisLabel]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[xAxisLabel]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
                     "_key": "(select)",
                     "_value": "",
                     "_type": "kv",
@@ -267,13 +219,55 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.GaugeChartData",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[angleSpan]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[startAngle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[units]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[bigSegments]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[smallSegments]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[min]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[max]",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +279,54 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legend]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showAxis]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[axisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"

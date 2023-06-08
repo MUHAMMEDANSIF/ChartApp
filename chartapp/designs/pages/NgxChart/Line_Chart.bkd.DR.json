@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "cebffedf-476d-7e15-bb0d-770c30e03085": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,14 +187,14 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "2e45e0a1-ebbe-d3e7-2b7d-3d0a38f030e5": {
+            "paletteKey": "NG-line-chart",
+            "parentEditorKey": "cebffedf-476d-7e15-bb0d-770c30e03085",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
+                    "_value": "Line Chart",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -231,19 +231,19 @@
                 },
                 {
                     "_key": "[legend]",
-                    "_value": "false",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showXAxisLabel]",
-                    "_value": "true",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showYAxisLabel]",
-                    "_value": "true",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,13 +267,13 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.lineChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +285,138 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[schemeType]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[rangeFillOpacity]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showGridLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[roundDomains]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTicks]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yAxisTickFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[timeline]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[autoScale]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[referenceLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showRefLines]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[showRefLabels]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[xScaleMax]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMin]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[yScaleMax]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"

@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "a6c8c6a8-5fe7-401b-c15b-156db14d4578": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,14 +187,14 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "8d22c670-eefb-dda3-3462-b692fd3a6fd5": {
+            "paletteKey": "NG-bar-chart-vertical",
+            "parentEditorKey": "a6c8c6a8-5fe7-401b-c15b-156db14d4578",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
+                    "_value": "Vertical Bar Chart",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -207,7 +207,10 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "class2",
+                        "class1"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -237,13 +240,13 @@
                 },
                 {
                     "_key": "[showXAxisLabel]",
-                    "_value": "true",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showYAxisLabel]",
-                    "_value": "true",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,13 +270,13 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "'cool'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.sverticalbarChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

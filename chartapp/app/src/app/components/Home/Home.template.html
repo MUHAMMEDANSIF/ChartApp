@@ -3,13 +3,13 @@
     <h1 class="app-name">
       Chart Application</h1>
     <form class="radio-form">
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-radio-button class="radio" [required]="false">Ng Charts</mat-radio-button><mat-radio-button class="radio" [required]="false">Ngx Charts</mat-radio-button></div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-radio-button class="radio" [required]="false" (click)="ngChart()">Ng Charts</mat-radio-button><mat-radio-button class="radio" [required]="false" (click)="ngxChart()">Ngx Charts</mat-radio-button></div>
     </form>
   </div>
   <div class="dropdown">
     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
       <mat-label></mat-label>
-      <mat-select matNativeControl placeholder="Select" [required]="false">
+      <mat-select matNativeControl placeholder="Select" [required]="false" (selectionChange)="sd_zq8SW4VuuAPSxuur($event)">
         <mat-optgroup [label] [disabled] *ngFor="let option of page.data; let i=index">
           <mat-option matNativeControl [value]="option.value">{{option.viewValue}}</mat-option>
         </mat-optgroup>

@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_jb2bOBNbTWpgrMkt",
+        "type": "tab",
+        "createdDate": "2023-06-07T17:26:56.642Z",
+        "label": "Stacked_Horizontal_Bar",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "Stacked_Horizontal_BarComponent"
+    },
+    {
+        "id": "sd_zKifHtNFqNfSl9Kq",
+        "type": "OnInit",
+        "z": "sd_jb2bOBNbTWpgrMkt",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_zKifHtNFqNfSl9Kq",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_69B76XtSiDzrdkOG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Stacked_Horizontal_BarComponent"
+    },
+    {
+        "id": "sd_NG6FXp4qyKNmCpWj",
+        "type": "PageVariables",
+        "z": "sd_jb2bOBNbTWpgrMkt",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "horizontalbarChartData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "horizontalbarChartData"
+                }
+            }
+        ],
+        "functionName": "sd_NG6FXp4qyKNmCpWj",
+        "category": "Function",
+        "x": 265,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Stacked_Horizontal_BarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_69B76XtSiDzrdkOG",
+        "type": "Script",
+        "z": "sd_jb2bOBNbTWpgrMkt",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.horizontalbarChartData = [\n{ \"name\": \"Germany\", \"value\": 40632,},\n{ \"name\": \"United States\", \"value\": 50000, },\n{ \"name\": \"France\", \"value\": 36745,},\n{ \"name\": \"United Kingdom\", \"value\": 36240, },\n{\"name\": \"Spain\", \"value\": 33000, },\n{\"name\": \"Italy\", \"value\": 35800, }]",
+        "functionName": "sd_69B76XtSiDzrdkOG",
+        "category": "Function",
+        "x": 165,
+        "y": 40,
+        "wires": [
+            [
+                "sd_NG6FXp4qyKNmCpWj"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Stacked_Horizontal_BarComponent",
+        "generated": true
+    }
+]

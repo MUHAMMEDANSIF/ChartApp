@@ -62,11 +62,184 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.data = [\n   {value: 'delhi-0', viewValue: 'Delhi'},\n   {value: 'mumbai-1', viewValue: 'Mumbai'},\n   {value: 'pune-2', viewValue: 'Pune'}\n ]\n",
+        "script": "\n",
         "functionName": "sd_cD8aFynettfc9CeB",
         "category": "Function",
         "x": 325,
         "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1JAdF2U1ElrtXLM1",
+        "type": "PageStart",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "NgChart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "ngChart",
+        "category": "General",
+        "x": 105,
+        "y": 160,
+        "wires": [
+            [
+                "sd_mYc8zquOsXJF2LNA"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_mYc8zquOsXJF2LNA",
+        "type": "Script",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.data = [\n   {value: 'line', viewValue: 'line'},\n   {value: 'bar', viewValue: 'bar'},\n   {value: 'pie', viewValue: 'pie'}\n ]",
+        "functionName": "sd_mYc8zquOsXJF2LNA",
+        "category": "Function",
+        "x": 245,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_rqGzBE7WlFWHoKjl",
+        "type": "PageStart",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "NgxChart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "ngxChart",
+        "category": "General",
+        "x": 105,
+        "y": 260,
+        "wires": [
+            [
+                "sd_nEeCQ3O656wDGW27"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_nEeCQ3O656wDGW27",
+        "type": "Script",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.data = [\n   {value: 'HoizontalBarChart', viewValue: 'HoizontalBarChart'},\n   {value: 'PieChart', viewValue: 'Pie Chart'},\n   {value: 'LineChart', viewValue: 'LineChart'},\n   {value: 'VerticalBar', viewValue: 'VerticalBar'},\n   {value: 'AreaChart', viewValue: 'AreaChart'},\n   {value: 'GaugeChart', viewValue: 'GaugeChart'},\n   {value: 'StackedHorizontal', viewValue: 'StackedHorizontal'},\n   {value: 'StackedVerticalBar', viewValue: 'StackedVerticalBar'},\n   {value: 'BubbleChart', viewValue: 'BubbleChart'},\n ]",
+        "functionName": "sd_nEeCQ3O656wDGW27",
+        "category": "Function",
+        "x": 245,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_zq8SW4VuuAPSxuur",
+        "type": "PageStart",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "value",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "sd_zq8SW4VuuAPSxuur",
+        "category": "General",
+        "x": 105,
+        "y": 360,
+        "wires": [
+            [
+                "sd_has2Vm20CBMlolaM"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_has2Vm20CBMlolaM",
+        "type": "Script",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.path = `/Home/${bh.input.value.value}`\n\nconsole.log(bh.input.value)",
+        "functionName": "sd_has2Vm20CBMlolaM",
+        "category": "Function",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "sd_KKovNedOeZPfCauF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KKovNedOeZPfCauF",
+        "type": "Navigation",
+        "z": "sd_5RNLx9mDSXMCYocE",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "",
+        "pathMap": {
+            "type": "bh.local",
+            "value": "path"
+        },
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "sd_KKovNedOeZPfCauF",
+        "category": "Navigation",
+        "x": 365,
+        "y": 360,
         "wires": [
             []
         ],

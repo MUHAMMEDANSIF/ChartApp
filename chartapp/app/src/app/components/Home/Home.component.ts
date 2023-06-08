@@ -12,6 +12,7 @@ import {
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
+import { Router } from '@angular/router'; //_splitter_
 //append_imports_end
 
 @Component({
@@ -60,6 +61,51 @@ export class HomeComponent {
     }
   }
 
+  ngChart(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_mYc8zquOsXJF2LNA(bh);
+      //appendnew_next_ngChart
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_1JAdF2U1ElrtXLM1');
+    }
+  }
+
+  ngxChart(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_nEeCQ3O656wDGW27(bh);
+      //appendnew_next_ngxChart
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_rqGzBE7WlFWHoKjl');
+    }
+  }
+
+  sd_zq8SW4VuuAPSxuur(value: any = undefined, ...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = { value: value };
+      bh.local = {};
+
+      bh = this.sd_has2Vm20CBMlolaM(bh);
+      //appendnew_next_sd_zq8SW4VuuAPSxuur
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_zq8SW4VuuAPSxuur');
+    }
+  }
+
   //appendnew_flow_HomeComponent_start
 
   sd_7NOw7MzT2p4e8v78(bh) {
@@ -74,17 +120,80 @@ export class HomeComponent {
 
   sd_cD8aFynettfc9CeB(bh) {
     try {
-      const page = this.page;
-      page.data = [
-        { value: 'delhi-0', viewValue: 'Delhi' },
-        { value: 'mumbai-1', viewValue: 'Mumbai' },
-        { value: 'pune-2', viewValue: 'Pune' },
-      ];
-
       //appendnew_next_sd_cD8aFynettfc9CeB
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_cD8aFynettfc9CeB');
+    }
+  }
+
+  sd_mYc8zquOsXJF2LNA(bh) {
+    try {
+      const page = this.page;
+      page.data = [
+        { value: 'line', viewValue: 'line' },
+        { value: 'bar', viewValue: 'bar' },
+        { value: 'pie', viewValue: 'pie' },
+      ];
+
+      //appendnew_next_sd_mYc8zquOsXJF2LNA
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_mYc8zquOsXJF2LNA');
+    }
+  }
+
+  sd_nEeCQ3O656wDGW27(bh) {
+    try {
+      const page = this.page;
+      page.data = [
+        { value: 'HoizontalBarChart', viewValue: 'HoizontalBarChart' },
+        { value: 'PieChart', viewValue: 'Pie Chart' },
+        { value: 'LineChart', viewValue: 'LineChart' },
+        { value: 'VerticalBar', viewValue: 'VerticalBar' },
+        { value: 'AreaChart', viewValue: 'AreaChart' },
+        { value: 'GaugeChart', viewValue: 'GaugeChart' },
+        { value: 'StackedHorizontal', viewValue: 'StackedHorizontal' },
+        { value: 'StackedVerticalBar', viewValue: 'StackedVerticalBar' },
+        { value: 'BubbleChart', viewValue: 'BubbleChart' },
+      ];
+
+      //appendnew_next_sd_nEeCQ3O656wDGW27
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_nEeCQ3O656wDGW27');
+    }
+  }
+
+  sd_has2Vm20CBMlolaM(bh) {
+    try {
+      const page = this.page;
+      bh.local.path = `/Home/${bh.input.value.value}`;
+
+      console.log(bh.input.value);
+
+      bh = this.sd_KKovNedOeZPfCauF(bh);
+      //appendnew_next_sd_has2Vm20CBMlolaM
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_has2Vm20CBMlolaM');
+    }
+  }
+
+  async sd_KKovNedOeZPfCauF(bh) {
+    try {
+      const { paramObj: qprm, path: path } =
+        this.sdService.getPathAndQParamsObj(bh.local.path);
+      await this.__page_injector__
+        .get(Router)
+        .navigate([this.sdService.formatPathWithParams(path, undefined)], {
+          queryParams: Object.assign(qprm, ''),
+        });
+
+      //appendnew_next_sd_KKovNedOeZPfCauF
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_KKovNedOeZPfCauF');
     }
   }
 

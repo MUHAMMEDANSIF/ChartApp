@@ -1,5 +1,5 @@
 {
-    "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f": {
+    "3d88de70-8a7e-196a-75f9-b4f25ec137c8": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
@@ -187,14 +187,14 @@
                 "_visibility": false
             }
         ],
-        "043fd184-baba-449d-8771-fd4bee43b419": {
-            "paletteKey": "NG-bar-chart-horizontal",
-            "parentEditorKey": "34e56bbe-8ced-8f9a-cf96-a0a8f85a538f",
+        "18eaa8dd-94c5-d955-338d-59280a29e27d": {
+            "paletteKey": "NG-pie-chart",
+            "parentEditorKey": "3d88de70-8a7e-196a-75f9-b4f25ec137c8",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Horizontal Bar Chart",
+                    "_value": "Pie Chart",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -207,55 +207,33 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "piechart"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[gradient]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[xAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[yAxis]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
                     "_key": "[legend]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pieChartLabels",
+                    "_value": "true",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[explodeSlices]",
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[showXAxisLabel]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[showYAxisLabel]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[yAxisLabel]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[xAxisLabel]",
-                    "_value": "",
+                    "_key": "[doughnut]",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,13 +245,13 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "'solar'",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[results]",
-                    "_value": "page.horizontalbarChartData",
+                    "_value": "page.pieChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -285,6 +263,78 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[view]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[customColors]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[animations]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendTitle]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[legendPosition]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[gradient]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[arcWidth]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipDisabled]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[tooltipText]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[labelFormatting]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[trimLabels]",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[maxLabelLength]",
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
