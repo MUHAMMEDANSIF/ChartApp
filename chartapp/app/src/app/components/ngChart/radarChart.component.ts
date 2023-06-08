@@ -52,7 +52,7 @@ export class radarChartComponent {
 
   sd_BfOkdbvKeKtEoLuw(bh) {
     try {
-      bh = this.sd_7nsBZoqB2J4WfGE1(bh);
+      bh = this.sd_QmTmGGMSx9khHHZE(bh);
       //appendnew_next_sd_BfOkdbvKeKtEoLuw
       return bh;
     } catch (e) {
@@ -62,24 +62,60 @@ export class radarChartComponent {
 
   //appendnew_flow_radarChartComponent_start
 
+  async sd_QmTmGGMSx9khHHZE(bh) {
+    try {
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/radarchart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      bh.local.radarChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
+
+      bh = this.sd_7nsBZoqB2J4WfGE1(bh);
+      //appendnew_next_sd_QmTmGGMSx9khHHZE
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_QmTmGGMSx9khHHZE');
+    }
+  }
+
   sd_7nsBZoqB2J4WfGE1(bh) {
     try {
-      const page = this.page;
-      page.radarChartData = [
-        {
-          data: [300, 500, 100],
-        },
-      ];
+      const page = this.page; // page.radarChartData = [
+      //   {
+      //     data: [
+      //       25,
+      //       11,
+      //       8,
+      //       9,
+      //       18,
+      //       29
+      //     ]
+      //   }
+      // ];
+      // page.radarChartLabels = [
+      // ] = [
+      //   'Emergency & Casualty',
+      //   'Labor Ward',
+      //   'Endoscopy Ward',
+      //   'Coronary Ward',
+      //   'Surgical Ward',
+      //   'General Ward'
+      // ]
+      // page.radarChartOptions = {
+      //   responsive: true
+      // }
+      // console.log(bh.local.radarChartData,"this is a label text",bh.local.radarChartData.labels)
+      page.radarChartData = bh.local.radarChartData.key;
+      page.radarChartLabels = bh.local.radarChartData.labels;
+      page.radarChartOptions = bh.local.radarChartData.options;
 
-      page.radarChartLabels = [
-        'Download Sales',
-        'In-Store Sales',
-        'Mail Sales',
-      ];
-
-      page.radarChartOptions = {
-        responsive: true,
-      };
+      console.log(page.radarChartLabels);
 
       bh = this.sd_KE3WZHpB8SONS1sB(bh);
       //appendnew_next_sd_7nsBZoqB2J4WfGE1
@@ -91,6 +127,10 @@ export class radarChartComponent {
 
   sd_KE3WZHpB8SONS1sB(bh) {
     try {
+      this.page.radarChartData = this.page.radarChartData;
+      this.page.radarChartLabels = this.page.radarChartLabels;
+      this.page.radarChartOptions = this.page.radarChartOptions;
+
       //appendnew_next_sd_KE3WZHpB8SONS1sB
       return bh;
     } catch (e) {

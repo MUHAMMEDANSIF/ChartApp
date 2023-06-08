@@ -23,7 +23,7 @@
         "y": 40,
         "wires": [
             [
-                "sd_7nsBZoqB2J4WfGE1"
+                "sd_QmTmGGMSx9khHHZE"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -40,11 +40,33 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "radarChartData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "radarChartData"
+                }
+            },
+            {
+                "textIp": "radarChartLabels",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "radarChartLabels"
+                }
+            },
+            {
+                "textIp": "radarChartOptions",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "radarChartOptions"
+                }
+            }
+        ],
         "functionName": "sd_KE3WZHpB8SONS1sB",
         "category": "Function",
-        "x": 325,
-        "y": 40,
+        "x": 405,
+        "y": 100,
         "wires": [
             []
         ],
@@ -60,14 +82,63 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.radarChartData = [{\n  data:[300, 500, 100]}\n               ];\n\npage.radarChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\npage.radarChartOptions = {\n  responsive: true\n}",
+        "script": "// page.radarChartData = [\n//   {\n//     data: [\n//       25,\n//       11,\n//       8,\n//       9,\n//       18,\n//       29\n//     ]\n//   }\n// ];\n// page.radarChartLabels = [\n// ] = [\n//   'Emergency & Casualty',\n//   'Labor Ward',\n//   'Endoscopy Ward',\n//   'Coronary Ward',\n//   'Surgical Ward',\n//   'General Ward'\n// ]\n// page.radarChartOptions = {\n//   responsive: true\n// }\n// console.log(bh.local.radarChartData,\"this is a label text\",bh.local.radarChartData.labels)\npage.radarChartData=bh.local.radarChartData.key\npage.radarChartLabels=bh.local.radarChartData.labels;\npage.radarChartOptions=bh.local.radarChartData.options\n\nconsole.log(page.radarChartLabels);",
         "functionName": "sd_7nsBZoqB2J4WfGE1",
         "category": "Function",
-        "x": 185,
-        "y": 40,
+        "x": 305,
+        "y": 120,
         "wires": [
             [
                 "sd_KE3WZHpB8SONS1sB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "radarChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_QmTmGGMSx9khHHZE",
+        "type": "HttpRequest",
+        "z": "sd_I2p7KJ2FI2vivaVI",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/radarchart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/radarchart"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.radarChartData",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "radarChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_QmTmGGMSx9khHHZE",
+        "category": "HTTP",
+        "x": 205,
+        "y": 100,
+        "wires": [
+            [
+                "sd_7nsBZoqB2J4WfGE1"
             ]
         ],
         "__n_excludedFromValidation__": {},

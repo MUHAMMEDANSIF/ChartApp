@@ -37,5 +37,57 @@
                 "api"
             ]
         }
+    },
+    "/ng/doughnutchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    },
+    "/ng/polarchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    },
+    "/ng/bubblechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
+    },
+    "/ng/radarchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "api"
+            ]
+        }
     }
 }

@@ -35,11 +35,14 @@ body {
 .dropdown {
     display: flex;
     justify-content: center;
+
 }
 
 .chart {
-    margin-left: 20%;
-    margin-top: 3rem;
+    // margin-left: 20%;
+    // margin-top: 3rem;
+    display: flex;
+    justify-content:center;
 }
 
 .piechart {

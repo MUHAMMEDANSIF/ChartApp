@@ -23,7 +23,7 @@
         "y": 40,
         "wires": [
             [
-                "sd_WlpuGpzoM2DHyKgn"
+                "sd_wwQ1A7RUVhP70BFb"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -65,8 +65,8 @@
         ],
         "functionName": "sd_bbtia8aVUFTRIwvs",
         "category": "Function",
-        "x": 265,
-        "y": 40,
+        "x": 385,
+        "y": 80,
         "wires": [
             []
         ],
@@ -82,11 +82,11 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.pieChartData = [{\n  data:[300, 500, 100]}\n               ];\n\npage.pieChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\npage.pieChartOptions = {\n  responsive: true\n}",
+        "script": "// page.pieChartData = [{\n//   data:[300, 500, 100]}\n//                ];\n\n// page.pieChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\n// page.pieChartOptions = {\n//   responsive: true\n// }\npage.pieChartData=bh.local.pieChartData.data;\npage.pieChartLabel=bh.local.pieChartData.labels;\npage.pieChartOptions=bh.local.pieChartData.options;",
         "functionName": "sd_WlpuGpzoM2DHyKgn",
         "category": "Function",
-        "x": 165,
-        "y": 160,
+        "x": 265,
+        "y": 80,
         "wires": [
             [
                 "sd_bbtia8aVUFTRIwvs"
@@ -121,9 +121,9 @@
             "mapVarType": "this.page",
             "mapVarValue": ""
         },
-        "resultMapping": "this.page.pieChartData",
+        "resultMapping": "bh.local.pieChartData",
         "resultMappingObj": {
-            "mapVarType": "this.page",
+            "mapVarType": "bh.local",
             "mapVarValue": "pieChartData"
         },
         "headers": {},
@@ -137,10 +137,13 @@
         "x": 160,
         "y": 60,
         "wires": [
-            []
+            [
+                "sd_WlpuGpzoM2DHyKgn"
+            ]
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": true,
-        "serviceName": "pieChartComponent"
+        "generateNext": false,
+        "serviceName": "pieChartComponent",
+        "generated": true
     }
 ]

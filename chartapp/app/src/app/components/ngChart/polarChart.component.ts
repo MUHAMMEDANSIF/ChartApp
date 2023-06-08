@@ -52,7 +52,7 @@ export class polarChartComponent {
 
   sd_AF0207Zi7YUEZp8B(bh) {
     try {
-      bh = this.sd_Bitduw3SEH9VDMLU(bh);
+      bh = this.sd_KWQTE2ICRNyhohvU(bh);
       //appendnew_next_sd_AF0207Zi7YUEZp8B
       return bh;
     } catch (e) {
@@ -62,24 +62,42 @@ export class polarChartComponent {
 
   //appendnew_flow_polarChartComponent_start
 
+  async sd_KWQTE2ICRNyhohvU(bh) {
+    try {
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/polarchart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      this.page.polarChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
+
+      bh = this.sd_Bitduw3SEH9VDMLU(bh);
+      //appendnew_next_sd_KWQTE2ICRNyhohvU
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_KWQTE2ICRNyhohvU');
+    }
+  }
+
   sd_Bitduw3SEH9VDMLU(bh) {
     try {
-      const page = this.page;
-      page.polarareaChartData = [
-        {
-          data: [300, 500, 100],
-        },
-      ];
+      const page = this.page; // page.polarareaChartData = [{
+      //   data:[300, 500, 100]}
+      //                ];
 
-      page.polarareaChartLabels = [
-        'Download Sales',
-        'In-Store Sales',
-        'Mail Sales',
-      ];
+      // page.polarareaChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
 
-      page.polarareaChartOptions = {
-        responsive: true,
-      };
+      // page.polarareaChartOptions = {
+      //   responsive: true
+      // }
+      page.polarareaChartData = page.polarChartData.data;
+      page.polarareaChartLabels = page.polarChartData.labels;
+      page.polarareaChartOptions = page.polarChartData.options;
 
       bh = this.sd_YIwj35oUup1QMvsk(bh);
       //appendnew_next_sd_Bitduw3SEH9VDMLU
