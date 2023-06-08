@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Hoizontal_Bar_Chart',
-  templateUrl: './Hoizontal_Bar_Chart.template.html',
+  selector: 'bh-Pie_Chart',
+  templateUrl: './Pie_Chart.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class Hoizontal_Bar_ChartComponent {
+export class Pie_ChartComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class Hoizontal_Bar_ChartComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_yk0bKsWMmInAv4HS(bh);
+      this.sd_J7WjWzE7i7i0fRRz(bh);
     }
   }
 
@@ -50,48 +50,46 @@ export class Hoizontal_Bar_ChartComponent {
     //append_listeners
   }
 
-  sd_yk0bKsWMmInAv4HS(bh) {
+  sd_J7WjWzE7i7i0fRRz(bh) {
     try {
-      bh = this.sd_elJuP7kQDJ5SM0Tq(bh);
-      //appendnew_next_sd_yk0bKsWMmInAv4HS
+      bh = this.sd_vNIdKfwsCLJZ3KiA(bh);
+      //appendnew_next_sd_J7WjWzE7i7i0fRRz
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_yk0bKsWMmInAv4HS');
+      return this.errorHandler(bh, e, 'sd_J7WjWzE7i7i0fRRz');
     }
   }
 
-  //appendnew_flow_Hoizontal_Bar_ChartComponent_start
+  //appendnew_flow_Pie_ChartComponent_start
 
-  async sd_elJuP7kQDJ5SM0Tq(bh) {
+  sd_vNIdKfwsCLJZ3KiA(bh) {
+    try {
+      bh = this.sd_ZrT9Cu3ABeLvUzEm(bh);
+      //appendnew_next_sd_vNIdKfwsCLJZ3KiA
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_vNIdKfwsCLJZ3KiA');
+    }
+  }
+
+  async sd_ZrT9Cu3ABeLvUzEm(bh) {
     try {
       let requestOptions = {
-        url: 'http://localhost:8081/api/ngx/horizontalbarchart',
+        url: 'http://localhost:8081/api/ngx/piechart',
         method: 'get',
         responseType: 'json',
         headers: {},
         params: {},
         body: undefined,
       };
-      this.page.horizontalbarChartData = await this.sdService.nHttpRequest(
+      this.page.pieChartData = await this.sdService.nHttpRequest(
         requestOptions
       );
 
-      bh = this.sd_tq0PKzgdfsSHpqVu(bh);
-      //appendnew_next_sd_elJuP7kQDJ5SM0Tq
+      //appendnew_next_sd_ZrT9Cu3ABeLvUzEm
       return bh;
     } catch (e) {
-      return await this.errorHandler(bh, e, 'sd_elJuP7kQDJ5SM0Tq');
-    }
-  }
-
-  sd_tq0PKzgdfsSHpqVu(bh) {
-    try {
-      this.page.horizontalbarChartData = this.page.horizontalbarChartData;
-
-      //appendnew_next_sd_tq0PKzgdfsSHpqVu
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_tq0PKzgdfsSHpqVu');
+      return await this.errorHandler(bh, e, 'sd_ZrT9Cu3ABeLvUzEm');
     }
   }
 
@@ -117,5 +115,5 @@ export class Hoizontal_Bar_ChartComponent {
       throw e;
     }
   }
-  //appendnew_flow_Hoizontal_Bar_ChartComponent_Catch
+  //appendnew_flow_Pie_ChartComponent_Catch
 }

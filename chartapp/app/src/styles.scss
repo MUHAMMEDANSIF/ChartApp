@@ -6,12 +6,12 @@
 .class1 {
   border-radius:10px;
   flex-basis:10%;
-  height:100px;
+  height:300px;
 }
 .class2 {
   border-radius:10px;
   flex-basis:10%;
-  height:100px;
+  height:300px;
 }
 
 body {
@@ -38,8 +38,11 @@ body {
 }
 
 .chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 20%;
     margin-top: 3rem;
+}
+
+.piechart {
+    width: 7rem;
+    height: 7rem;
 }

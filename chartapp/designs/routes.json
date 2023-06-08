@@ -35,6 +35,38 @@
                 {
                     "path": "bubble",
                     "component": "bubbleChartComponent"
+                },
+                {
+                    "path": "PieChart",
+                    "component": "Pie_ChartComponent"
+                },
+                {
+                    "path": "LineChart",
+                    "component": "Line_ChartComponent"
+                },
+                {
+                    "path": "VerticalBar",
+                    "component": "Vertical_Bar_ChartComponent"
+                },
+                {
+                    "path": "AreaChart",
+                    "component": "Area_ChartComponent"
+                },
+                {
+                    "path": "GaugeChart",
+                    "component": "Gauge_ChartComponent"
+                },
+                {
+                    "path": "StackedHorizontal",
+                    "component": "Stacked_Horizontal_BarComponent"
+                },
+                {
+                    "path": "StackedVerticalBar",
+                    "component": "Stacked_Vertical_BarComponent"
+                },
+                {
+                    "path": "BubbleChart",
+                    "component": "Bubble_ChartComponent"
                 }
             ]
         },

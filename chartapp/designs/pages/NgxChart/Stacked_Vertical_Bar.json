@@ -1,39 +1,39 @@
 [
     {
-        "id": "sd_3Gu1p22HVUJCMCoV",
+        "id": "sd_73Nu0S0Jcw7adxCx",
         "type": "tab",
-        "createdDate": "2023-06-07T10:29:39.936Z",
-        "label": "Hoizontal_Bar_Chart",
+        "createdDate": "2023-06-07T17:26:35.405Z",
+        "label": "Stacked_Vertical_Bar",
         "disabled": false,
         "info": "",
         "functionSeq": 0,
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Stacked_Vertical_BarComponent"
     },
     {
-        "id": "sd_yk0bKsWMmInAv4HS",
+        "id": "sd_e41y2nv5cijsrxOn",
         "type": "OnInit",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_73Nu0S0Jcw7adxCx",
         "viewType": "common",
         "nodeType": "start",
         "name": "",
-        "functionName": "sd_yk0bKsWMmInAv4HS",
+        "functionName": "sd_e41y2nv5cijsrxOn",
         "category": "Lifecycle Events",
         "x": 30,
         "y": 30,
         "wires": [
             [
-                "sd_elJuP7kQDJ5SM0Tq"
+                "sd_G7u3K6NIWU7G84Up"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Stacked_Vertical_BarComponent"
     },
     {
-        "id": "sd_tq0PKzgdfsSHpqVu",
+        "id": "sd_OKnP2cTNHBjrG2ls",
         "type": "PageVariables",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_73Nu0S0Jcw7adxCx",
         "viewType": "pages",
         "nodeType": "flow",
         "name": "",
@@ -42,38 +42,38 @@
         "operation": "set",
         "globalVariables": [
             {
-                "textIp": "horizontalbarChartData",
+                "textIp": "sverticalbarChartData",
                 "typedIpValue": {
                     "type": "this.page",
-                    "value": "horizontalbarChartData"
+                    "value": "sverticalbarChartData"
                 }
             }
         ],
-        "functionName": "sd_tq0PKzgdfsSHpqVu",
+        "functionName": "sd_OKnP2cTNHBjrG2ls",
         "category": "Function",
-        "x": 265,
+        "x": 325,
         "y": 40,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "serviceName": "Stacked_Vertical_BarComponent",
         "generated": true
     },
     {
-        "id": "sd_elJuP7kQDJ5SM0Tq",
+        "id": "sd_G7u3K6NIWU7G84Up",
         "type": "HttpRequest",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_73Nu0S0Jcw7adxCx",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
         "method": "get",
         "methodMappingObj": {},
-        "urlMapping": "\"http://localhost:8081/api/ngx/horizontalbarchart\"",
+        "urlMapping": "\"http://localhost:8081/api/ngx/verticalbarchart\"",
         "urlMappingObj": {
             "mapVarType": "str",
-            "mapVarValue": "http://localhost:8081/api/ngx/horizontalbarchart"
+            "mapVarValue": "http://localhost:8081/api/ngx/verticalbarchart"
         },
         "ret": "json",
         "retMappingObj": {},
@@ -85,10 +85,10 @@
             "mapVarType": "this.page",
             "mapVarValue": ""
         },
-        "resultMapping": "this.page.horizontalbarChartData",
+        "resultMapping": "this.page.pieChartData",
         "resultMappingObj": {
             "mapVarType": "this.page",
-            "mapVarValue": "horizontalbarChartData"
+            "mapVarValue": "pieChartData"
         },
         "headers": {},
         "headersObj": [],
@@ -96,18 +96,18 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "functionName": "sd_elJuP7kQDJ5SM0Tq",
+        "functionName": "sd_G7u3K6NIWU7G84Up",
         "category": "HTTP",
         "x": 145,
         "y": 40,
         "wires": [
             [
-                "sd_tq0PKzgdfsSHpqVu"
+                "sd_OKnP2cTNHBjrG2ls"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "serviceName": "Stacked_Vertical_BarComponent",
         "generated": true
     }
 ]

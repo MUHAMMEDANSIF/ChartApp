@@ -1,5 +1,9 @@
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-Api-SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq
+import { Api as SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq } from './sd-services/NgxChart/Api';
 
 export const UserRoutes = [
     //CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY
+//CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY-Api-SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq
+SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq,
 ];

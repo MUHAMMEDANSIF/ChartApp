@@ -1,0 +1,106 @@
+{
+    "/ngx/piechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/linechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/areachart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/verticalchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/verticalbarchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/gaugechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/horizontalbarchart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    },
+    "/ngx/bubblechart": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Api"
+            ]
+        }
+    }
+}

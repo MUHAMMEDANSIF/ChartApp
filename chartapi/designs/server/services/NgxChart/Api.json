@@ -1,0 +1,1037 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "type": "tab",
+        "createdDate": "2023-06-07T13:07:30.942Z",
+        "label": "Api",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "Api",
+        "relativeParentPath": "NgxChart"
+    },
+    {
+        "id": "sd_pP6PSoZEQJ2Z5EJx",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/piechart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "uploadFileOptions": "",
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 80,
+        "wires": [
+            [
+                "sd_xhGsAKQbzDUGSFD2"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_pP6PSoZEQJ2Z5EJx"
+    },
+    {
+        "id": "sd_xhGsAKQbzDUGSFD2",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n{ \"name\": \"Germany\", \"value\": 40632,},\n{ \"name\": \"United States\", \"value\": 50000, },\n{ \"name\": \"France\", \"value\": 36745,},\n{\"name\": \"Spain\", \"value\": 33000, },\n{\"name\": \"Italy\", \"value\": 35800, }];",
+        "functionName": "sd_xhGsAKQbzDUGSFD2",
+        "category": "Function",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "sd_cLrOCniQUEoafNji"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_cLrOCniQUEoafNji",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_cLrOCniQUEoafNji",
+        "category": "HTTP",
+        "x": 420,
+        "y": 80,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_3fiYYPNr61a8Ky5g",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/linechart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "uploadFileOptions": "",
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 200,
+        "wires": [
+            [
+                "sd_zT9rZTkcAWdsKprK"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_3fiYYPNr61a8Ky5g"
+    },
+    {
+        "id": "sd_zT9rZTkcAWdsKprK",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n{\n\"name\": \"Germany\",\n\"series\": [\n{\"value\": 4168,\"name\":2010 },\n{\"value\": 4529,\"name\":2011 },\n{\"value\": 6575,\"name\":2012 },\n]},\n{\n\"name\": \"USA\",\n\"series\": [\n{\"value\": 5481,\"name\":2010},\n{\"value\": 5881,\"name\":2011},\n{\"value\": 3860,\"name\":2012},\n]}\n]",
+        "functionName": "sd_zT9rZTkcAWdsKprK",
+        "category": "Function",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "sd_FBz3S8pcavi0M8pu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_FBz3S8pcavi0M8pu",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_FBz3S8pcavi0M8pu",
+        "category": "HTTP",
+        "x": 420,
+        "y": 200,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_gK8gOfb1AmwVQb9m",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/areachart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 300,
+        "wires": [
+            [
+                "sd_4huHshH0W5phbSYZ"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_gK8gOfb1AmwVQb9m"
+    },
+    {
+        "id": "sd_4huHshH0W5phbSYZ",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n{\n\"name\": \"Grenada\",\n\"series\": [\n{\"value\": 5465,\"name\":2010 },\n{\"value\": 2201,\"name\":2011 },\n{\"value\": 5129,\"name\":2012 },\n{\"value\": 2129,\"name\":2013 },\n]},\n{\n\"name\": \"Congo\",\n\"series\": [\n{\"value\": 2629,\"name\":2010},\n{\"value\": 3415, \"name\":2011 },\n{\"value\": 5994,\"name\":2012},\n{\"value\": 2994,\"name\":2013},\n]},\n\n{\n\"name\": \"Thailand\",\n\"series\": [\n{\"value\": 4168,\"name\":2010 },\n{\"value\": 4529,\"name\":2011 },\n{\"value\": 6575,\"name\":2012 },\n{\"value\": 3575,\"name\":2013 },\n]}\n];",
+        "functionName": "sd_4huHshH0W5phbSYZ",
+        "category": "Function",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "sd_z6inxmsqpu0iJBOn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_z6inxmsqpu0iJBOn",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_z6inxmsqpu0iJBOn",
+        "category": "HTTP",
+        "x": 420,
+        "y": 300,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_POSTUDOZvGmy4K3u",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/verticalchart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "uploadFileOptions": "",
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 420,
+        "wires": [
+            [
+                "sd_Wo71usdLp3qXwBEQ"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_POSTUDOZvGmy4K3u"
+    },
+    {
+        "id": "sd_Wo71usdLp3qXwBEQ",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n  {\n    \"name\": \"Germany\",\n    \"series\": [{\"name\": \"2010\",\"value\": 40632},\n      {\"name\": \"2000\",\"value\": 36953},\n      {\"name\": \"1990\",\"value\": 31476} ]},\n  {\n    \"name\": \"United States\",\n    \"series\": [{\"name\": \"2010\",\"value\": 49737},\n      {\"name\": \"2000\",\"value\": 45986},\n      {\"name\": \"1990\",\"value\": 37060}]},\n\n];",
+        "functionName": "sd_Wo71usdLp3qXwBEQ",
+        "category": "Function",
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "sd_uFoJNppwL9a0MjeU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_uFoJNppwL9a0MjeU",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_uFoJNppwL9a0MjeU",
+        "category": "HTTP",
+        "x": 420,
+        "y": 420,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_gDsV4vxxr4r36bi0",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/verticalbarchart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 540,
+        "wires": [
+            [
+                "sd_XIumeugTmAt56pxS"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_gDsV4vxxr4r36bi0"
+    },
+    {
+        "id": "sd_XIumeugTmAt56pxS",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n  {\n    \"name\": \"Germany\",\n    \"series\": [{\"name\": \"2010\",\"value\": 40632},\n      {\"name\": \"2000\",\"value\": 36953},\n      {\"name\": \"1990\",\"value\": 31476} ]},\n  {\n    \"name\": \"United States\",\n    \"series\": [{\"name\": \"2010\",\"value\": 49737},\n      {\"name\": \"2000\",\"value\": 45986},\n      {\"name\": \"1990\",\"value\": 37060}]},\n\n];",
+        "functionName": "sd_XIumeugTmAt56pxS",
+        "category": "Function",
+        "x": 240,
+        "y": 540,
+        "wires": [
+            [
+                "sd_W7XScDmWaBInYFFD"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_W7XScDmWaBInYFFD",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_W7XScDmWaBInYFFD",
+        "category": "HTTP",
+        "x": 420,
+        "y": 540,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_nrTcn5MLMdIYQUS5",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/gaugechart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 660,
+        "wires": [
+            [
+                "sd_wbb0vVJLqyRBXh7Q"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_nrTcn5MLMdIYQUS5"
+    },
+    {
+        "id": "sd_wbb0vVJLqyRBXh7Q",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n{\"name\": \"Germany\",\"value\": 400},\n{\"name\": \"United States\",\"value\": 730},\n{\"name\": \"France\",\"value\": 675},\n    ];",
+        "functionName": "sd_wbb0vVJLqyRBXh7Q",
+        "category": "Function",
+        "x": 240,
+        "y": 660,
+        "wires": [
+            [
+                "sd_z9hqzv5vHOCgcLRH"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_z9hqzv5vHOCgcLRH",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_z9hqzv5vHOCgcLRH",
+        "category": "HTTP",
+        "x": 420,
+        "y": 660,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_4FhThTxMzofOuVrI",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/horizontalbarchart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 760,
+        "wires": [
+            [
+                "sd_5KVduqr5HYzmGfTY"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_4FhThTxMzofOuVrI"
+    },
+    {
+        "id": "sd_5KVduqr5HYzmGfTY",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data =  [\n{ \"name\": \"Germany\", \"value\": 40632,},\n{ \"name\": \"United States\", \"value\": 50000, },\n{ \"name\": \"France\", \"value\": 36745,},\n{ \"name\": \"United Kingdom\", \"value\": 36240, },\n{\"name\": \"Spain\", \"value\": 33000, },\n{\"name\": \"Italy\", \"value\": 35800, }]",
+        "functionName": "sd_5KVduqr5HYzmGfTY",
+        "category": "Function",
+        "x": 240,
+        "y": 760,
+        "wires": [
+            [
+                "sd_UMAUZYOP5Uv92EDz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_UMAUZYOP5Uv92EDz",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_UMAUZYOP5Uv92EDz",
+        "category": "HTTP",
+        "x": 420,
+        "y": 760,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_ygIHtturegoBrJKu",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/ngx/bubblechart",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 880,
+        "wires": [
+            [
+                "sd_zdyoz0isMcohDzpf"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Api",
+        "functionName": "sd_ygIHtturegoBrJKu"
+    },
+    {
+        "id": "sd_zdyoz0isMcohDzpf",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.data = [\n{\n\"name\": \"USA\",\n\"series\": [\n{\n\"name\": \"2010\",\n\"x\": 197,\n\"y\": 75,\n\"r\": 310\n},\n{\n\"name\": \"2000\",\n\"x\": 201,\n\"y\": 20,\n\"r\": 283\n},\n{\n\"name\": \"1990\",\n\"x\": 270,\n\"y\": 30,\n\"r\": 253\n}\n]\n},\n{\n\"name\": \"France\",\n\"series\": [\n{\n\"name\": \"2010\",\n\"x\": 367,\n\"y\": 81.4,\n\"r\": 63\n},\n{\n\"name\": \"2000\",\n\"x\": 347,\n\"y\": 79.1,\n\"r\": 59.4\n},\n{\n\"name\": \"1990\",\n\"x\": 294,\n\"y\": 77.2,\n\"r\": 56.9\n}\n]\n}\n];",
+        "functionName": "sd_zdyoz0isMcohDzpf",
+        "category": "Function",
+        "x": 240,
+        "y": 880,
+        "wires": [
+            [
+                "sd_AIfTQaqMPwwzaLJf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    },
+    {
+        "id": "sd_AIfTQaqMPwwzaLJf",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_8Ekb63KIYXtvoxoq",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "data",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.data",
+            "send": "bh.local.data"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_AIfTQaqMPwwzaLJf",
+        "category": "HTTP",
+        "x": 420,
+        "y": 880,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Api",
+        "generated": true
+    }
+]

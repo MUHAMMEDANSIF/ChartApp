@@ -1,113 +1,111 @@
 [
     {
-        "id": "sd_3Gu1p22HVUJCMCoV",
+        "id": "sd_JEVzDLgNnJcO0Xkh",
         "type": "tab",
-        "createdDate": "2023-06-07T10:29:39.936Z",
-        "label": "Hoizontal_Bar_Chart",
+        "createdDate": "2023-06-07T12:58:04.887Z",
+        "label": "Pie_Chart",
         "disabled": false,
         "info": "",
         "functionSeq": 0,
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Pie_ChartComponent"
     },
     {
-        "id": "sd_yk0bKsWMmInAv4HS",
+        "id": "sd_J7WjWzE7i7i0fRRz",
         "type": "OnInit",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_JEVzDLgNnJcO0Xkh",
         "viewType": "common",
         "nodeType": "start",
         "name": "",
-        "functionName": "sd_yk0bKsWMmInAv4HS",
+        "functionName": "sd_J7WjWzE7i7i0fRRz",
         "category": "Lifecycle Events",
         "x": 30,
         "y": 30,
         "wires": [
             [
-                "sd_elJuP7kQDJ5SM0Tq"
+                "sd_vNIdKfwsCLJZ3KiA"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "Hoizontal_Bar_ChartComponent"
+        "serviceName": "Pie_ChartComponent"
     },
     {
-        "id": "sd_tq0PKzgdfsSHpqVu",
+        "id": "sd_vNIdKfwsCLJZ3KiA",
         "type": "PageVariables",
-        "z": "sd_3Gu1p22HVUJCMCoV",
+        "z": "sd_JEVzDLgNnJcO0Xkh",
         "viewType": "pages",
         "nodeType": "flow",
         "name": "",
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [
-            {
-                "textIp": "horizontalbarChartData",
-                "typedIpValue": {
-                    "type": "this.page",
-                    "value": "horizontalbarChartData"
-                }
-            }
-        ],
-        "functionName": "sd_tq0PKzgdfsSHpqVu",
+        "globalVariables": [],
+        "functionName": "sd_vNIdKfwsCLJZ3KiA",
         "category": "Function",
-        "x": 265,
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_ZrT9Cu3ABeLvUzEm"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Pie_ChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ZrT9Cu3ABeLvUzEm",
+        "type": "HttpRequest",
+        "z": "sd_JEVzDLgNnJcO0Xkh",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ngx/piechart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ngx/piechart"
+        },
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMapping": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.pieChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "pieChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "functionName": "sd_ZrT9Cu3ABeLvUzEm",
+        "category": "HTTP",
+        "x": 320,
         "y": 40,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_elJuP7kQDJ5SM0Tq",
-        "type": "HttpRequest",
-        "z": "sd_3Gu1p22HVUJCMCoV",
-        "viewType": "client-pages",
-        "nodeType": "flow",
-        "name": "",
-        "method": "get",
-        "methodMappingObj": {},
-        "urlMapping": "\"http://localhost:8081/api/ngx/horizontalbarchart\"",
-        "urlMappingObj": {
-            "mapVarType": "str",
-            "mapVarValue": "http://localhost:8081/api/ngx/horizontalbarchart"
-        },
-        "ret": "json",
-        "retMappingObj": {},
-        "observe": "",
-        "observeMappingObj": {},
-        "reportProgress": false,
-        "withCreds": false,
-        "reqBodyObj": {
-            "mapVarType": "this.page",
-            "mapVarValue": ""
-        },
-        "resultMapping": "this.page.horizontalbarChartData",
-        "resultMappingObj": {
-            "mapVarType": "this.page",
-            "mapVarValue": "horizontalbarChartData"
-        },
-        "headers": {},
-        "headersObj": [],
-        "headerMappingObj": {},
-        "params": {},
-        "paramsObj": [],
-        "paramMappingObj": {},
-        "functionName": "sd_elJuP7kQDJ5SM0Tq",
-        "category": "HTTP",
-        "x": 145,
-        "y": 40,
-        "wires": [
-            [
-                "sd_tq0PKzgdfsSHpqVu"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "Hoizontal_Bar_ChartComponent",
+        "serviceName": "Pie_ChartComponent",
         "generated": true
     }
 ]

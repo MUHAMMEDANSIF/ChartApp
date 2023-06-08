@@ -6,6 +6,7 @@
         "radio-form",
         "radio",
         "dropdown",
-        "chart"
+        "chart",
+        "piechart"
     ]
 }

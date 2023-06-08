@@ -545,6 +545,19 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "ngChart()",
+                                "_type": "kv",
+                                "_attrDef": "c",
+                                "objValue": {
+                                    "nodeID": "sd_1JAdF2U1ElrtXLM1",
+                                    "functionName": "ngChart",
+                                    "activeTree": "pages",
+                                    "z": "sd_5RNLx9mDSXMCYocE",
+                                    "input": []
+                                }
                             }
                         ]
                     },
@@ -639,6 +652,19 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "ngxChart()",
+                                "_type": "kv",
+                                "_attrDef": "c",
+                                "objValue": {
+                                    "nodeID": "sd_rqGzBE7WlFWHoKjl",
+                                    "functionName": "ngxChart",
+                                    "activeTree": "pages",
+                                    "z": "sd_5RNLx9mDSXMCYocE",
+                                    "input": []
+                                }
                             }
                         ]
                     }
@@ -985,9 +1011,19 @@
                     },
                     {
                         "_key": "(selectionChange)",
-                        "_value": "",
+                        "_value": "sd_zq8SW4VuuAPSxuur($event)",
                         "_type": "kv",
-                        "_attrDef": "p"
+                        "_attrDef": "p",
+                        "_customAttributeFlag": "flowpicker",
+                        "objValue": {
+                            "nodeID": "sd_zq8SW4VuuAPSxuur",
+                            "functionName": "sd_zq8SW4VuuAPSxuur",
+                            "activeTree": "pages",
+                            "z": "sd_5RNLx9mDSXMCYocE",
+                            "input": [
+                                "$event"
+                            ]
+                        }
                     },
                     {
                         "_key": "selectCustomOption",
