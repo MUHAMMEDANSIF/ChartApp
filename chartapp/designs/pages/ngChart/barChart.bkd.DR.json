@@ -207,9 +207,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": [
-                        "chart"
-                    ],
+                    "_value": [],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
