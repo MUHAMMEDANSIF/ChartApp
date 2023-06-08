@@ -23,7 +23,7 @@
         "y": 180,
         "wires": [
             [
-                "sd_kZ3cNHBFPu7TptVH"
+                "sd_Ny1WFQ2vDMbB5Rp6"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -58,32 +58,10 @@
         ],
         "functionName": "sd_KWACfrWTFn886CPr",
         "category": "Function",
-        "x": 380,
-        "y": 190,
+        "x": 465,
+        "y": 180,
         "wires": [
             []
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "lineChartComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_kZ3cNHBFPu7TptVH",
-        "type": "Script",
-        "z": "sd_IvAC5IGrXHhCdV2E",
-        "viewType": "common",
-        "nodeType": "flow",
-        "name": "",
-        "script": "page.lineChartData = [\n        { data: [65, 59, 80, 81, 56, 55, 40,10,20,30,40,50], label: 'Series A' },\n        { data: [28, 48, 40, 19, 86, 25, 90,11,23,31,42,51], label: 'Series B' },\n        { data: [18, 45, 75, 9, 100, 26, 40,12,24,32,43,52], label: 'Series C' },\n        { data: [15, 42, 76, 7, 105, 25, 40,12,24,32,43,52], label: 'Series D' },\n        { data: [19, 48, 77, 5, 103, 27, 40,12,24,32,43,52], label: 'Series E' },\n        { data: [28, 47, 40, 19, 86, 28, 90,11,23,31,42,51], label: 'Series F' },\n        { data: [25, 46, 42, 15, 85, 27, 90,11,23,31,42,51], label: 'Series G' },\n    ];\npage.lineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July','Aug','Sep','Oct','nov','dec',];",
-        "functionName": "sd_kZ3cNHBFPu7TptVH",
-        "category": "Function",
-        "x": 240,
-        "y": 190,
-        "wires": [
-            [
-                "sd_KWACfrWTFn886CPr"
-            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
@@ -128,6 +106,55 @@
         "y": 330,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "lineChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Ny1WFQ2vDMbB5Rp6",
+        "type": "HttpRequest",
+        "z": "sd_IvAC5IGrXHhCdV2E",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/linechart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/linechart"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.lineChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "lineChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_Ny1WFQ2vDMbB5Rp6",
+        "category": "HTTP",
+        "x": 225,
+        "y": 180,
+        "wires": [
+            [
+                "sd_KWACfrWTFn886CPr"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

@@ -52,7 +52,7 @@ export class barChartComponent {
 
   sd_AcdXr1pyt1GrhUre(bh) {
     try {
-      bh = this.sd_wx9BxQei03qC5QvY(bh);
+      bh = this.sd_HlEZi3lRx2PLlKPI(bh);
       //appendnew_next_sd_AcdXr1pyt1GrhUre
       return bh;
     } catch (e) {
@@ -62,29 +62,25 @@ export class barChartComponent {
 
   //appendnew_flow_barChartComponent_start
 
-  sd_wx9BxQei03qC5QvY(bh) {
+  async sd_HlEZi3lRx2PLlKPI(bh) {
     try {
-      const page = this.page;
-      page.barChartData = [
-        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
-      ];
-
-      page.barChartLabels = [
-        '2006',
-        '2007',
-        '2008',
-        '2009',
-        '2010',
-        '2011',
-        '2012',
-      ];
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/barchart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      this.page.barChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
 
       bh = this.sd_rPQVZTJFmxVWWiMO(bh);
-      //appendnew_next_sd_wx9BxQei03qC5QvY
+      //appendnew_next_sd_HlEZi3lRx2PLlKPI
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_wx9BxQei03qC5QvY');
+      return await this.errorHandler(bh, e, 'sd_HlEZi3lRx2PLlKPI');
     }
   }
 

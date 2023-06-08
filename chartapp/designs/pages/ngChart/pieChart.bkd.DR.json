@@ -219,19 +219,19 @@
                 },
                 {
                     "_key": "[datasets]",
-                    "_value": " page.pieChartData ",
+                    "_value": " page.pieChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.pieChartLabels  ",
+                    "_value": "page.pieChartLabels",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[options]",
-                    "_value": "page.pieChartOptions ",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

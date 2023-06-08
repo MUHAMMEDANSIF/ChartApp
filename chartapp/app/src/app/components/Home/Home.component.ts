@@ -134,6 +134,10 @@ export class HomeComponent {
         { value: 'line', viewValue: 'line' },
         { value: 'bar', viewValue: 'bar' },
         { value: 'pie', viewValue: 'pie' },
+        { value: 'doughnut', viewValue: 'doughnut' },
+        { value: 'bubble', viewValue: 'bubble' },
+        { value: 'radar', viewValue: 'radar' },
+        { value: 'polar', viewValue: 'polar' },
       ];
 
       //appendnew_next_sd_mYc8zquOsXJF2LNA

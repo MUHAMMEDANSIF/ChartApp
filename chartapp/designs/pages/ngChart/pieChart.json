@@ -86,7 +86,7 @@
         "functionName": "sd_WlpuGpzoM2DHyKgn",
         "category": "Function",
         "x": 165,
-        "y": 40,
+        "y": 160,
         "wires": [
             [
                 "sd_bbtia8aVUFTRIwvs"
@@ -96,5 +96,51 @@
         "generateNext": false,
         "serviceName": "pieChartComponent",
         "generated": true
+    },
+    {
+        "id": "sd_wwQ1A7RUVhP70BFb",
+        "type": "HttpRequest",
+        "z": "sd_uMIwiHQr09q15OjJ",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/piechart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/piechart"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.pieChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "pieChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_wwQ1A7RUVhP70BFb",
+        "category": "HTTP",
+        "x": 160,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "pieChartComponent"
     }
 ]
