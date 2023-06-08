@@ -52,7 +52,7 @@ export class pieChartComponent {
 
   sd_LSxQXZGchLz4LZNp(bh) {
     try {
-      bh = this.sd_WlpuGpzoM2DHyKgn(bh);
+      bh = this.sd_wwQ1A7RUVhP70BFb(bh);
       //appendnew_next_sd_LSxQXZGchLz4LZNp
       return bh;
     } catch (e) {
@@ -62,20 +62,40 @@ export class pieChartComponent {
 
   //appendnew_flow_pieChartComponent_start
 
+  async sd_wwQ1A7RUVhP70BFb(bh) {
+    try {
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/piechart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      bh.local.pieChartData = await this.sdService.nHttpRequest(requestOptions);
+
+      bh = this.sd_WlpuGpzoM2DHyKgn(bh);
+      //appendnew_next_sd_wwQ1A7RUVhP70BFb
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_wwQ1A7RUVhP70BFb');
+    }
+  }
+
   sd_WlpuGpzoM2DHyKgn(bh) {
     try {
-      const page = this.page;
-      page.pieChartData = [
-        {
-          data: [300, 500, 100],
-        },
-      ];
+      const page = this.page; // page.pieChartData = [{
+      //   data:[300, 500, 100]}
+      //                ];
 
-      page.pieChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+      // page.pieChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
 
-      page.pieChartOptions = {
-        responsive: true,
-      };
+      // page.pieChartOptions = {
+      //   responsive: true
+      // }
+      page.pieChartData = bh.local.pieChartData.data;
+      page.pieChartLabel = bh.local.pieChartData.labels;
+      page.pieChartOptions = bh.local.pieChartData.options;
 
       bh = this.sd_bbtia8aVUFTRIwvs(bh);
       //appendnew_next_sd_WlpuGpzoM2DHyKgn

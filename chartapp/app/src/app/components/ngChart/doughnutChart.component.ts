@@ -52,7 +52,7 @@ export class doughnutChartComponent {
 
   sd_OvBd1hzU9avRaYbp(bh) {
     try {
-      bh = this.sd_Ir8FKXz9QQMqfgRc(bh);
+      bh = this.sd_r6k25CzD883Xir9U(bh);
       //appendnew_next_sd_OvBd1hzU9avRaYbp
       return bh;
     } catch (e) {
@@ -62,29 +62,25 @@ export class doughnutChartComponent {
 
   //appendnew_flow_doughnutChartComponent_start
 
-  sd_Ir8FKXz9QQMqfgRc(bh) {
+  async sd_r6k25CzD883Xir9U(bh) {
     try {
-      const page = this.page;
-      page.doughnutChartData = [
-        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
-      ];
-
-      page.doughnutChartLabels = [
-        '2006',
-        '2007',
-        '2008',
-        '2009',
-        '2010',
-        '2011',
-        '2012',
-      ];
+      let requestOptions = {
+        url: 'http://localhost:8081/api/ng/doughnutchart',
+        method: 'get',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      this.page.doughnutChartData = await this.sdService.nHttpRequest(
+        requestOptions
+      );
 
       bh = this.sd_bo5Xa9CyP2oB5RxD(bh);
-      //appendnew_next_sd_Ir8FKXz9QQMqfgRc
+      //appendnew_next_sd_r6k25CzD883Xir9U
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_Ir8FKXz9QQMqfgRc');
+      return await this.errorHandler(bh, e, 'sd_r6k25CzD883Xir9U');
     }
   }
 

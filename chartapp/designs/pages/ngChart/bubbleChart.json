@@ -96,5 +96,51 @@
         "generateNext": false,
         "serviceName": "bubbleChartComponent",
         "generated": true
+    },
+    {
+        "id": "sd_xQM5F2k6CdZdxeZF",
+        "type": "HttpRequest",
+        "z": "sd_Ug858rRb1GSSnr2G",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/bubblechart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/bubblechart"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.bubbleChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "bubbleChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_xQM5F2k6CdZdxeZF",
+        "category": "HTTP",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "bubbleChartComponent"
     }
 ]

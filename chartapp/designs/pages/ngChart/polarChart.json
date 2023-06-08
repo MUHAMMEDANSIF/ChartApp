@@ -23,7 +23,7 @@
         "y": 40,
         "wires": [
             [
-                "sd_Bitduw3SEH9VDMLU"
+                "sd_KWQTE2ICRNyhohvU"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -82,14 +82,69 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.polarareaChartData = [{\n  data:[300, 500, 100]}\n               ];\n\npage.polarareaChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\npage.polarareaChartOptions = {\n  responsive: true\n}",
+        "script": "// page.polarareaChartData = [{\n//   data:[300, 500, 100]}\n//                ];\n\n// page.polarareaChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];\n\n// page.polarareaChartOptions = {\n//   responsive: true\n// }\n page.polarareaChartData=page.polarChartData.data\n page.polarareaChartLabels=page.polarChartData.labels\n page.polarareaChartOptions=page.polarChartData.options\n",
         "functionName": "sd_Bitduw3SEH9VDMLU",
         "category": "Function",
-        "x": 165,
-        "y": 40,
+        "x": 245,
+        "y": 120,
         "wires": [
             [
                 "sd_YIwj35oUup1QMvsk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "polarChartComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KWQTE2ICRNyhohvU",
+        "type": "HttpRequest",
+        "z": "sd_8QS6HWobRoCJNaqF",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/polarchart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/polarchart"
+        },
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMapping": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.polarChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "polarChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "functionName": "sd_KWQTE2ICRNyhohvU",
+        "category": "HTTP",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "sd_Bitduw3SEH9VDMLU"
             ]
         ],
         "__n_excludedFromValidation__": {},

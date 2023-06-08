@@ -23,7 +23,7 @@
         "y": 40,
         "wires": [
             [
-                "sd_Ir8FKXz9QQMqfgRc"
+                "sd_r6k25CzD883Xir9U"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -65,6 +65,52 @@
         "category": "Function",
         "x": 185,
         "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "doughnutChartComponent"
+    },
+    {
+        "id": "sd_r6k25CzD883Xir9U",
+        "type": "HttpRequest",
+        "z": "sd_TsjF2KIK9I0dQmM3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/ng/doughnutchart\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/ng/doughnutchart"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.doughnutChartData",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "doughnutChartData"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_r6k25CzD883Xir9U",
+        "category": "HTTP",
+        "x": 180,
+        "y": 140,
         "wires": [
             [
                 "sd_bo5Xa9CyP2oB5RxD"

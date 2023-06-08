@@ -219,19 +219,19 @@
                 },
                 {
                     "_key": "[datasets]",
-                    "_value": " page.polarareaChartData  ",
+                    "_value": " page.polarareaChartData",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[labels]",
-                    "_value": "page.polarareaChartLabels  ",
+                    "_value": "page.polarareaChartLabels",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[options]",
-                    "_value": "page.polarareaChartOptions ",
+                    "_value": " page.polarareaChartDataOptions",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
