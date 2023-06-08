@@ -63,6 +63,7 @@
         "nodeType": "flow",
         "name": "",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlMapping": "\"http://localhost:8081/api/ngx/areachart\"",
         "urlMappingObj": {
@@ -70,11 +71,14 @@
             "mapVarValue": "http://localhost:8081/api/ngx/areachart"
         },
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
         "observe": "",
+        "observeMapping": "",
         "observeMappingObj": {},
         "reportProgress": false,
         "withCreds": false,
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -86,9 +90,11 @@
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
         "functionName": "sd_Nc7MRxvRmnzUP04k",
         "category": "HTTP",

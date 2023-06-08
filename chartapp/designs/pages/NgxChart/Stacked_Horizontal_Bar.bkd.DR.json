@@ -211,7 +211,7 @@
                 },
                 {
                     "_key": "[gradient]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -229,7 +229,7 @@
                 },
                 {
                     "_key": "[legend]",
-                    "_value": "true",
+                    "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -265,7 +265,7 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "",
+                    "_value": "'vivid'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -295,7 +295,7 @@
                 },
                 {
                     "_key": "[schemeType]",
-                    "_value": "",
+                    "_value": "'linear'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -313,7 +313,7 @@
                 },
                 {
                     "_key": "[animations]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

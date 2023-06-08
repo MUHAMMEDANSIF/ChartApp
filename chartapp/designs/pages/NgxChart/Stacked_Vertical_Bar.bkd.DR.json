@@ -187,7 +187,7 @@
                 "_visibility": false
             }
         ],
-        "6b325f5a-0b24-c83a-eef7-e06a63233d68": {
+        "cd1f087c-bab2-06e2-1cc1-dee52bcb5acc": {
             "paletteKey": "NG-stacked-bar-chart-vertical",
             "parentEditorKey": "0d7f3063-e08d-6d20-f425-ed85781eedf9",
             "commentid": null,
@@ -213,7 +213,7 @@
                 },
                 {
                     "_key": "[gradient]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -231,31 +231,31 @@
                 },
                 {
                     "_key": "[legend]",
-                    "_value": "false",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showXAxisLabel]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[showYAxisLabel]",
-                    "_value": "",
+                    "_value": "true",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[yAxisLabel]",
-                    "_value": "",
+                    "_value": "'country'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "[xAxisLabel]",
-                    "_value": "",
+                    "_value": "'GDP per capita'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -267,7 +267,7 @@
                 },
                 {
                     "_key": "[scheme]",
-                    "_value": "",
+                    "_value": "'vivid'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -297,7 +297,7 @@
                 },
                 {
                     "_key": "[schemeType]",
-                    "_value": "",
+                    "_value": "'linear'",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
